@@ -17,30 +17,30 @@ export default function UnifiedModal({ isOpen, onClose, config }) {
     security: {
       Icon: ShieldCheck,
       color: 'text-amber-400',
-      badgeBg: 'bg-amber-500/20 text-amber-300 border-amber-500/30',
-      badgeText: 'Keamanan Akun',
-      buttonBg: 'bg-gradient-to-r from-amber-500 to-[#ff5e3a]'
+      badgeBg: 'bg-amber-500/15 text-amber-300 border-amber-500/30',
+      badgeText: 'KEAMANAN AKUN',
+      buttonBg: 'bg-gradient-to-r from-[#ff4655] via-[#ff5400] to-[#ff7a00]'
     },
     warning: {
       Icon: AlertTriangle,
       color: 'text-rose-400',
-      badgeBg: 'bg-rose-500/20 text-rose-300 border-rose-500/30',
-      badgeText: 'Perhatian',
-      buttonBg: 'bg-gradient-to-r from-rose-500 to-[#6b3bfc]'
+      badgeBg: 'bg-red-500/15 text-rose-300 border-red-500/30',
+      badgeText: 'PERHATIAN',
+      buttonBg: 'bg-gradient-to-r from-[#ff4655] to-[#e11d48]'
     },
     success: {
       Icon: CheckCircle2,
       color: 'text-emerald-400',
-      badgeBg: 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30',
-      badgeText: 'Berhasil',
+      badgeBg: 'bg-emerald-500/15 text-emerald-300 border-emerald-500/30',
+      badgeText: 'BERHASIL',
       buttonBg: 'bg-gradient-to-r from-emerald-500 to-teal-600'
     },
     info: {
       Icon: Info,
       color: 'text-[#ff4655]',
-      badgeBg: 'bg-purple-500/20 text-[#ff4655] border-purple-500/30',
-      badgeText: 'Informasi YUMATOPUP',
-      buttonBg: 'bg-gradient-to-r from-[#6b3bfc] to-[#ff5e3a]'
+      badgeBg: 'bg-red-500/15 text-[#ff4655] border-red-500/30',
+      badgeText: 'INFORMASI YUMATOPUP',
+      buttonBg: 'bg-gradient-to-r from-[#ff4655] via-[#ff5400] to-[#ff7a00]'
     }
   };
 
@@ -48,30 +48,30 @@ export default function UnifiedModal({ isOpen, onClose, config }) {
   const ModalIcon = style.Icon;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-[fadeIn_0.2s_ease-out]">
-      <div className="relative w-full max-w-md bg-[#181133] border border-[#3e3066] rounded-3xl shadow-2xl p-6 sm:p-7 text-left overflow-hidden">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-[fadeIn_0.2s_ease-out]">
+      <div className="relative w-full max-w-md bg-[#0e1118] border border-[#1e2538] rounded-3xl shadow-2xl p-6 sm:p-7 text-left overflow-hidden">
 
-        {/* Top ambient glow */}
-        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#6b3bfc] via-[#ff5e3a] to-[#ffaa00]" />
+        {/* Top ambient esports glow */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#ff4655] via-[#ff5400] to-[#ffaa00]" />
 
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 p-2 rounded-full bg-[#231a44] text-slate-400 hover:text-white transition-colors"
+          className="absolute top-4 right-4 p-2 rounded-full bg-[#161a25] hover:bg-[#ff4655] text-slate-400 hover:text-white border border-[#202738] transition-colors cursor-pointer"
         >
           <X className="w-4 h-4" />
         </button>
 
         {/* Header Icon & Badge */}
         <div className="flex items-center gap-3 mb-4">
-          <div className={`w-12 h-12 rounded-2xl bg-[#231a44] border border-[#3b2d66] flex items-center justify-center ${style.color} shadow-inner`}>
+          <div className={`w-12 h-12 rounded-2xl bg-[#161a25] border border-[#22293d] flex items-center justify-center ${style.color} shadow-inner`}>
             <ModalIcon className="w-6 h-6 stroke-[2.2]" />
           </div>
           <div>
             <div className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full border text-[10px] font-black uppercase tracking-wider mb-1 ${style.badgeBg}`}>
               <span>{style.badgeText}</span>
             </div>
-            <h3 className="text-lg font-black text-white leading-tight">
+            <h3 className="text-lg sm:text-xl font-black text-white leading-tight tracking-tight">
               {title}
             </h3>
           </div>
@@ -86,13 +86,13 @@ export default function UnifiedModal({ isOpen, onClose, config }) {
 
         {/* Checklist / Items if provided */}
         {items && items.length > 0 && (
-          <div className="space-y-2 mb-5">
+          <div className="space-y-2.5 mb-5">
             {items.map((item, idx) => (
               <div
                 key={idx}
-                className="p-3 rounded-2xl bg-[#221743] border border-[#382b60] flex items-start gap-2.5 text-xs text-slate-200"
+                className="p-3 sm:p-3.5 rounded-2xl bg-[#141824] border border-[#1e2638] flex items-start gap-3 text-xs sm:text-[13px] text-slate-200"
               >
-                <div className="w-5 h-5 rounded-full bg-[#6b3bfc]/20 text-[#a78bfa] flex items-center justify-center font-bold text-[10px] flex-shrink-0 mt-0.5">
+                <div className="w-5 h-5 rounded-full bg-red-500/20 text-[#ff4655] border border-red-500/30 flex items-center justify-center font-black text-[11px] flex-shrink-0 mt-0.5">
                   {idx + 1}
                 </div>
                 <div className="flex-1 leading-snug">
@@ -110,7 +110,7 @@ export default function UnifiedModal({ isOpen, onClose, config }) {
             if (onAction) onAction();
             onClose();
           }}
-          className={`w-full py-3 rounded-xl font-bold text-sm text-white ${style.buttonBg} hover:brightness-110 shadow-lg shadow-purple-950/40 transition-all transform active:scale-98`}
+          className={`w-full py-3.5 rounded-xl font-bold text-sm text-white ${style.buttonBg} hover:brightness-110 shadow-lg shadow-red-500/25 transition-all transform active:scale-98 cursor-pointer`}
         >
           {actionText}
         </button>
@@ -119,4 +119,3 @@ export default function UnifiedModal({ isOpen, onClose, config }) {
     </div>
   );
 }
-

@@ -470,7 +470,7 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
 
                       {/* Accordion Body: Cards Grid */}
                       {isOpen && (
-                        <div className="p-4 sm:p-5">
+                        <div className="p-4 sm:p-5 bg-[#0c0e14]">
                           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                             {group.items.map((item) => {
                               const isSelected = selectedPayment && selectedPayment.id === item.id;
@@ -480,42 +480,57 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
                                 <div
                                   key={item.id}
                                   onClick={() => setSelectedPayment(item)}
-                                  className={`relative p-3.5 rounded-2xl cursor-pointer transition-all duration-200 flex flex-col justify-between ${isSelected
-                                      ? 'bg-white border-2 border-[#1677ff] shadow-xl ring-2 ring-[#1677ff]/30 -translate-y-0.5'
-                                      : 'bg-[#f4f5f8] hover:bg-white border border-slate-200 hover:shadow-md'
-                                    }`}
+                                  className={`group relative p-3.5 sm:p-4 rounded-2xl cursor-pointer transition-all duration-200 border text-left flex flex-col justify-between select-none ${
+                                    isSelected
+                                      ? 'bg-gradient-to-b from-[#241219] to-[#141824] border-[#ff4655] ring-2 ring-[#ff4655]/35 shadow-xl shadow-red-950/40 -translate-y-0.5'
+                                      : 'bg-[#141824] hover:bg-[#191f30] border-[#1e2638] hover:border-[#ff4655]/50 hover:shadow-lg'
+                                  }`}
                                 >
-                                  {/* Top: Image Logo */}
-                                  <div className="h-7 flex items-center justify-start mb-2">
-                                    <img
-                                      src={item.image}
-                                      alt={item.name}
-                                      className="max-h-7 max-w-[100px] object-contain object-left"
-                                      onError={(e) => {
-                                        e.currentTarget.style.display = 'none';
-                                      }}
-                                    />
+                                  {/* Top: Image Logo & Checkmark */}
+                                  <div className="flex items-center justify-between mb-2">
+                                    <div className="h-8 px-2.5 py-1 bg-white rounded-lg flex items-center justify-center shadow-sm">
+                                      <img
+                                        src={item.image}
+                                        alt={item.name}
+                                        className="max-h-5 max-w-[85px] object-contain object-left"
+                                        onError={(e) => {
+                                          e.currentTarget.style.display = 'none';
+                                        }}
+                                      />
+                                    </div>
+
+                                    {/* Selected Checkmark Badge (matching Card Harga) */}
+                                    {isSelected && (
+                                      <div className="w-5 h-5 rounded-full bg-gradient-to-r from-[#ff4655] to-[#ff7a00] text-white flex items-center justify-center shadow-md shadow-red-500/30">
+                                        <Check className="w-3 h-3 stroke-[3]" />
+                                      </div>
+                                    )}
                                   </div>
 
-                                  {/* Middle: Bold Price in Dayjhostore format */}
-                                  <div className="text-sm sm:text-base font-extrabold text-[#0f172a] my-0.5 tracking-tight">
-                                    {formatIDR(calculatedPrice)}
+                                  {/* Middle: Bold Price in Esports Amber */}
+                                  <div className="my-1">
+                                    <span className="text-[10px] text-slate-400 uppercase font-semibold block leading-none">
+                                      Total Bayar
+                                    </span>
+                                    <span className="text-sm sm:text-base font-extrabold text-amber-400 tracking-tight mt-0.5 block">
+                                      {formatIDR(calculatedPrice)}
+                                    </span>
                                   </div>
 
                                   {/* Divider */}
-                                  <hr className="border-slate-200 my-1" />
+                                  <div className="border-t border-[#1e2638] my-2" />
 
                                   {/* Bottom: Uppercase Name */}
-                                  <div className="text-[10px] font-bold text-slate-500 uppercase tracking-wider truncate">
-                                    {item.name}
+                                  <div className="flex items-center justify-between text-[11px]">
+                                    <span className="font-bold text-slate-300 group-hover:text-white truncate">
+                                      {item.name}
+                                    </span>
+                                    {item.badge && (
+                                      <span className="text-[9px] px-1.5 py-0.2 rounded bg-emerald-500/15 text-emerald-300 border border-emerald-500/25 font-bold ml-1 flex-shrink-0">
+                                        {item.badge}
+                                      </span>
+                                    )}
                                   </div>
-
-                                  {/* Selected Checkmark Badge (Image 5 style) */}
-                                  {isSelected && (
-                                    <div className="absolute top-2 right-2 w-5 h-5 rounded-full bg-[#1677ff] text-white flex items-center justify-center shadow-md">
-                                      <Check className="w-3.5 h-3.5 stroke-[3]" />
-                                    </div>
-                                  )}
                                 </div>
                               );
                             })}
@@ -523,15 +538,17 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
                         </div>
                       )}
 
-                      {/* Bottom Logo Strip Matching Dayjhostore (Image 5 footer strip) */}
-                      <div className="bg-white/95 px-4 py-2 border-t border-slate-200 flex items-center justify-end gap-3 overflow-x-auto">
+                      {/* Bottom Logo Strip Matching Esports Dark Theme */}
+                      <div className="bg-[#10131d] px-4 py-2.5 border-t border-[#1a2030] flex items-center justify-end gap-2.5 overflow-x-auto">
+                        <span className="text-[10px] text-slate-400 font-medium mr-1 hidden sm:inline">Dukungan:</span>
                         {group.items.map((item) => (
-                          <img
-                            key={item.id}
-                            src={item.image}
-                            alt={item.name}
-                            className="h-3.5 sm:h-4 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity"
-                          />
+                          <div key={item.id} className="h-5 px-1.5 py-0.5 bg-white/90 hover:bg-white rounded flex items-center justify-center transition-colors">
+                            <img
+                              src={item.image}
+                              alt={item.name}
+                              className="h-3 w-auto object-contain"
+                            />
+                          </div>
                         ))}
                       </div>
 

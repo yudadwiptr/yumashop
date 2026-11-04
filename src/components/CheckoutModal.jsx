@@ -67,8 +67,8 @@ export default function CheckoutModal({ order, onClose }) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md overflow-y-auto">
-      <div className="relative w-full max-w-lg bg-[#1a1337] border border-[#1e2436] rounded-3xl shadow-2xl p-6 sm:p-7 text-left my-8">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md overflow-y-auto">
+      <div className="relative w-full max-w-lg bg-[#0e1118] border border-[#1e2538] rounded-3xl shadow-2xl p-6 sm:p-7 text-left my-8">
         
         {/* Close Button */}
         <button
@@ -175,7 +175,7 @@ export default function CheckoutModal({ order, onClose }) {
                     <rect x="85" y="55" width="30" height="10" fill="#000000" />
                     <rect x="75" y="75" width="50" height="50" fill="#000000" rx="4" />
                     <rect x="85" y="85" width="30" height="30" fill="#ffffff" rx="2" />
-                    <circle cx="100" cy="100" r="10" fill="#6242fc" />
+                    <circle cx="100" cy="100" r="10" fill="#ff4655" />
 
                     <rect x="30" y="85" width="25" height="10" fill="#000000" />
                     <rect x="40" y="105" width="15" height="15" fill="#000000" />
@@ -210,13 +210,13 @@ export default function CheckoutModal({ order, onClose }) {
                     />
                   )}
                 </div>
-                <div className="flex items-center justify-between bg-[#191235] p-3 rounded-xl border border-[#382b63]">
+                <div className="flex items-center justify-between bg-[#11141d] p-3 rounded-xl border border-[#1e2436]">
                   <span className="font-mono text-base sm:text-lg font-bold text-amber-300 tracking-wider">
                     {virtualAccountNo}
                   </span>
                   <button
                     onClick={() => handleCopy(virtualAccountNo)}
-                    className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-[#6242fc] hover:bg-[#7354fc] text-white text-xs font-bold transition-colors cursor-pointer"
+                    className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-gradient-to-r from-[#ff4655] to-[#ff6b00] text-white text-xs font-bold transition-all hover:brightness-110 cursor-pointer"
                   >
                     {copied ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
                     <span>{copied ? 'Tersalin' : 'Salin'}</span>
@@ -258,7 +258,7 @@ export default function CheckoutModal({ order, onClose }) {
             </p>
 
             {/* Receipt Summary Card */}
-            <div className="my-5 p-4 rounded-2xl bg-[#231a44] border border-[#1e2436] text-left text-xs space-y-2">
+            <div className="my-5 p-4 rounded-2xl bg-[#141824] border border-[#1e2436] text-left text-xs space-y-2">
               <div className="flex justify-between text-slate-400">
                 <span>Status Transaksi</span>
                 <span className="font-bold text-emerald-400 uppercase">LUNAS / BERHASIL</span>
