@@ -1,0 +1,1026 @@
+[
+  {
+    "name": "Valorant",
+    "slug": "valorant",
+    "href": "https://dayjhostore.com/games/valorant-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705140866_cf2466ea1d1e389c1859.webp",
+    "filename": "valorant.webp",
+    "local_path": "/assets/games/valorant.webp"
+  },
+  {
+    "name": "PUBG Mobile",
+    "slug": "pubg-mobile",
+    "href": "https://dayjhostore.com/games/pubg-mobile-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705140874_7eb11bdf6f33030ee1d4.webp",
+    "filename": "pubg-mobile.webp",
+    "local_path": "/assets/games/pubg-mobile.webp"
+  },
+  {
+    "name": "Genshin Impact",
+    "slug": "genshin-impact",
+    "href": "https://dayjhostore.com/games/genshin-impact-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705140887_4b1327527ef1f2904ea7.webp",
+    "filename": "genshin-impact.webp",
+    "local_path": "/assets/games/genshin-impact.webp"
+  },
+  {
+    "name": "Call of Duty Mobile",
+    "slug": "call-of-duty-mobile",
+    "href": "https://dayjhostore.com/games/call-of-duty-mobile-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705140907_97d26d1580fd8e325b73.webp",
+    "filename": "call-of-duty-mobile.webp",
+    "local_path": "/assets/games/call-of-duty-mobile.webp"
+  },
+  {
+    "name": "Mobile Legends Indonesia",
+    "slug": "mobile-legends-indonesia",
+    "href": "https://dayjhostore.com/games/mobile-legends-indonesia",
+    "image_url": "https://dayjhostore.com/assets/images/games/1783591099_9dd267625cade7d27874.webp",
+    "filename": "mobile-legends-indonesia.webp",
+    "local_path": "/assets/games/mobile-legends-indonesia.webp"
+  },
+  {
+    "name": "Teamfight Tactics Mobile",
+    "slug": "teamfight-tactics-mobile",
+    "href": "https://dayjhostore.com/games/teamfight-tactics-mobile-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1716692463_81bca091bce260604325.webp",
+    "filename": "teamfight-tactics-mobile.webp",
+    "local_path": "/assets/games/teamfight-tactics-mobile.webp"
+  },
+  {
+    "name": "Honor of Kings",
+    "slug": "honor-of-kings",
+    "href": "https://dayjhostore.com/games/honor-of-kings-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1716957235_fedee3f13ab2fc97ead1.webp",
+    "filename": "honor-of-kings.webp",
+    "local_path": "/assets/games/honor-of-kings.webp"
+  },
+  {
+    "name": "Honkai : Star Rail",
+    "slug": "honkai-star-rail",
+    "href": "https://dayjhostore.com/games/honkai-star-rail-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705140894_652f5d48178a7ea169f4.webp",
+    "filename": "honkai-star-rail.webp",
+    "local_path": "/assets/games/honkai-star-rail.webp"
+  },
+  {
+    "name": "Arena of Valor",
+    "slug": "arena-of-valor",
+    "href": "https://dayjhostore.com/games/arena-of-valor-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705140900_051e9ff0069d8decec80.webp",
+    "filename": "arena-of-valor.webp",
+    "local_path": "/assets/games/arena-of-valor.webp"
+  },
+  {
+    "name": "Dunk City Dynasty",
+    "slug": "dunk-city-dynasty",
+    "href": "https://dayjhostore.com/games/dunk-city-dynasty-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705140915_85824a5bea44ed7d1f95.webp",
+    "filename": "dunk-city-dynasty.webp",
+    "local_path": "/assets/games/dunk-city-dynasty.webp"
+  },
+  {
+    "name": "Ragnarok Origin",
+    "slug": "ragnarok-origin",
+    "href": "https://dayjhostore.com/games/ragnarok-origin-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705140931_0eafff7d2dd95eb49d8b.webp",
+    "filename": "ragnarok-origin.webp",
+    "local_path": "/assets/games/ragnarok-origin.webp"
+  },
+  {
+    "name": "Clash of Clans",
+    "slug": "clash-of-clans",
+    "href": "https://dayjhostore.com/games/clash-of-clans-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705140938_365d622c7a5f6a19ad2f.webp",
+    "filename": "clash-of-clans.webp",
+    "local_path": "/assets/games/clash-of-clans.webp"
+  },
+  {
+    "name": "Marvel Snap",
+    "slug": "marvel-snap",
+    "href": "https://dayjhostore.com/games/marvel-snap-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705141285_29e6b615908e676d0e9e.webp",
+    "filename": "marvel-snap.webp",
+    "local_path": "/assets/games/marvel-snap.webp"
+  },
+  {
+    "name": "Brawl Stars",
+    "slug": "brawl-stars",
+    "href": "https://dayjhostore.com/games/brawl-stars-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705141314_ca79de6a86bf81cbcb08.webp",
+    "filename": "brawl-stars.webp",
+    "local_path": "/assets/games/brawl-stars.webp"
+  },
+  {
+    "name": "Astral Guardians : Cyber Fantasy",
+    "slug": "astral-guardians-cyber-fantasy",
+    "href": "https://dayjhostore.com/games/astral-guardians-cyber-fantasy-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705141360_0ad8bb9e6215102f9bed.webp",
+    "filename": "astral-guardians-cyber-fantasy.webp",
+    "local_path": "/assets/games/astral-guardians-cyber-fantasy.webp"
+  },
+  {
+    "name": "Alchemy Stars",
+    "slug": "alchemy-stars",
+    "href": "https://dayjhostore.com/games/alchemy-stars-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705141322_327f58c2945ce38697fb.webp",
+    "filename": "alchemy-stars.webp",
+    "local_path": "/assets/games/alchemy-stars.webp"
+  },
+  {
+    "name": "Seal M SEA",
+    "slug": "seal-m-sea",
+    "href": "https://dayjhostore.com/games/seal-m-sea-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705140945_5a7d79ab7abb6c9a8162.webp",
+    "filename": "seal-m-sea.webp",
+    "local_path": "/assets/games/seal-m-sea.webp"
+  },
+  {
+    "name": "Ragnarok Origin - Package",
+    "slug": "ragnarok-origin-package",
+    "href": "https://dayjhostore.com/games/ragnarok-origin-package-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705140931_0eafff7d2dd95eb49d8b.webp",
+    "filename": "ragnarok-origin-package.webp",
+    "local_path": "/assets/games/ragnarok-origin-package.webp"
+  },
+  {
+    "name": "Project Entropy",
+    "slug": "project-entropy",
+    "href": "https://dayjhostore.com/games/project-entropy-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705140953_76004a9fb2da94f578e5.webp",
+    "filename": "project-entropy.webp",
+    "local_path": "/assets/games/project-entropy.webp"
+  },
+  {
+    "name": "Metal Slug : Awakening",
+    "slug": "metal-slug-awakening",
+    "href": "https://dayjhostore.com/games/metal-slug-awakening-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705140959_fd5843384f2aedb22a3e.webp",
+    "filename": "metal-slug-awakening.webp",
+    "local_path": "/assets/games/metal-slug-awakening.webp"
+  },
+  {
+    "name": "Madtale",
+    "slug": "madtale",
+    "href": "https://dayjhostore.com/games/madtale-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705140973_f87d79254a997b3f82d7.webp",
+    "filename": "madtale.webp",
+    "local_path": "/assets/games/madtale.webp"
+  },
+  {
+    "name": "Luna Online New World",
+    "slug": "luna-online-new-world",
+    "href": "https://dayjhostore.com/games/luna-online-new-world-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705140985_fdb2fed4fbd9c22b59a2.webp",
+    "filename": "luna-online-new-world.webp",
+    "local_path": "/assets/games/luna-online-new-world.webp"
+  },
+  {
+    "name": "Clash Royale",
+    "slug": "clash-royale",
+    "href": "https://dayjhostore.com/games/clash-royale-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705141300_69a139d69589c757d914.webp",
+    "filename": "clash-royale.webp",
+    "local_path": "/assets/games/clash-royale.webp"
+  },
+  {
+    "name": "Life Makeover",
+    "slug": "life-makeover",
+    "href": "https://dayjhostore.com/games/life-makeover-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705140966_2ca70833d7f6098ce354.webp",
+    "filename": "life-makeover.webp",
+    "local_path": "/assets/games/life-makeover.webp"
+  },
+  {
+    "name": "Legends of Runeterra",
+    "slug": "legends-of-runeterra",
+    "href": "https://dayjhostore.com/games/legends-of-runeterra-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705140992_22b1b82a6b0611ddcede.webp",
+    "filename": "legends-of-runeterra.webp",
+    "local_path": "/assets/games/legends-of-runeterra.webp"
+  },
+  {
+    "name": "Kings Choice",
+    "slug": "kings-choice",
+    "href": "https://dayjhostore.com/games/kings-choice-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705141370_43962610d18bb8921306.webp",
+    "filename": "kings-choice.webp",
+    "local_path": "/assets/games/kings-choice.webp"
+  },
+  {
+    "name": "King of Kings",
+    "slug": "king-of-kings",
+    "href": "https://dayjhostore.com/games/king-of-kings-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705223747_dfcdaae9648e724b1c59.webp",
+    "filename": "king-of-kings.webp",
+    "local_path": "/assets/games/king-of-kings.webp"
+  },
+  {
+    "name": "Hay Day",
+    "slug": "hay-day",
+    "href": "https://dayjhostore.com/games/hay-day-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705141293_19c27571a5f0e3e6306a.webp",
+    "filename": "hay-day.webp",
+    "local_path": "/assets/games/hay-day.webp"
+  },
+  {
+    "name": "Harry Potter: Magic Awakened",
+    "slug": "harry-potter-magic-awakened",
+    "href": "https://dayjhostore.com/games/harry-potter-magic-awakened-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705141398_ca9576c92f13e3baa0fa.webp",
+    "filename": "harry-potter-magic-awakened.webp",
+    "local_path": "/assets/games/harry-potter-magic-awakened.webp"
+  },
+  {
+    "name": "Ensemble Stars Music",
+    "slug": "ensemble-stars-music",
+    "href": "https://dayjhostore.com/games/ensemble-stars-music-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705141339_9c6e029a63969df942c5.webp",
+    "filename": "ensemble-stars-music.webp",
+    "local_path": "/assets/games/ensemble-stars-music.webp"
+  },
+  {
+    "name": "Daybreak Legends",
+    "slug": "daybreak-legends",
+    "href": "https://dayjhostore.com/games/daybreak-legends-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1702544120_31b27c88fa831d577c5e.webp",
+    "filename": "daybreak-legends.webp",
+    "local_path": "/assets/games/daybreak-legends.webp"
+  },
+  {
+    "name": "Ace Racer",
+    "slug": "ace-racer",
+    "href": "https://dayjhostore.com/games/ace-racer-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705141379_c51b450b941bcbb9d0e8.webp",
+    "filename": "ace-racer.webp",
+    "local_path": "/assets/games/ace-racer.webp"
+  },
+  {
+    "name": "Tower of Fantasy",
+    "slug": "tower-of-fantasy",
+    "href": "https://dayjhostore.com/games/tower-of-fantasy-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705141330_30573048bb49c55ccaa4.webp",
+    "filename": "tower-of-fantasy.webp",
+    "local_path": "/assets/games/tower-of-fantasy.webp"
+  },
+  {
+    "name": "Chrono Travelers",
+    "slug": "chrono-travelers",
+    "href": "https://dayjhostore.com/games/chrono-travelers-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1716958263_66c4a7753a9c00592218.webp",
+    "filename": "chrono-travelers.webp",
+    "local_path": "/assets/games/chrono-travelers.webp"
+  },
+  {
+    "name": "NBA Infinite",
+    "slug": "nba-infinite",
+    "href": "https://dayjhostore.com/games/nba-infinite-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1716958320_67069e35c6bb877949de.jpg",
+    "filename": "nba-infinite.jpg",
+    "local_path": "/assets/games/nba-infinite.jpg"
+  },
+  {
+    "name": "Astra : Knights of Veda",
+    "slug": "astra-knights-of-veda",
+    "href": "https://dayjhostore.com/games/astra-knights-of-veda-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1716958702_9daf62d45072f37124e2.webp",
+    "filename": "astra-knights-of-veda.webp",
+    "local_path": "/assets/games/astra-knights-of-veda.webp"
+  },
+  {
+    "name": "Tower Brawl",
+    "slug": "tower-brawl",
+    "href": "https://dayjhostore.com/games/tower-brawl-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1716956768_70873f886aae8ae95f36.jpg",
+    "filename": "tower-brawl.jpg",
+    "local_path": "/assets/games/tower-brawl.jpg"
+  },
+  {
+    "name": "The Ants",
+    "slug": "the-ants",
+    "href": "https://dayjhostore.com/games/the-ants-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1716956980_f774ee8367cf953f76df.webp",
+    "filename": "the-ants.webp",
+    "local_path": "/assets/games/the-ants.webp"
+  },
+  {
+    "name": "Scroll of Onmyoji : Sakura &amp; Sword",
+    "slug": "scroll-of-onmyoji-sakura-amp-sword",
+    "href": "https://dayjhostore.com/games/scroll-of-onmyoji-sakura-sword-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1716957311_882018fc1dd5490aaeab.webp",
+    "filename": "scroll-of-onmyoji-sakura-amp-sword.webp",
+    "local_path": "/assets/games/scroll-of-onmyoji-sakura-amp-sword.webp"
+  },
+  {
+    "name": "Rise of Kingdom",
+    "slug": "rise-of-kingdom",
+    "href": "https://dayjhostore.com/games/rise-of-kingdom-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1716957661_902df805af1ffbdfbd55.webp",
+    "filename": "rise-of-kingdom.webp",
+    "local_path": "/assets/games/rise-of-kingdom.webp"
+  },
+  {
+    "name": "Pixel Gun 3D",
+    "slug": "pixel-gun-3d",
+    "href": "https://dayjhostore.com/games/pixel-gun-3d-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1716958101_350c3910b30368bd6912.png",
+    "filename": "pixel-gun-3d.png",
+    "local_path": "/assets/games/pixel-gun-3d.png"
+  },
+  {
+    "name": "Captain Tsubasa : Ace",
+    "slug": "captain-tsubasa-ace",
+    "href": "https://dayjhostore.com/games/captain-tsubasa-ace-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1716958304_cfc77e914a8e65bfce06.webp",
+    "filename": "captain-tsubasa-ace.webp",
+    "local_path": "/assets/games/captain-tsubasa-ace.webp"
+  },
+  {
+    "name": "Marvel\\'s Spider-Man Remastered - Voucher",
+    "slug": "marvel-s-spider-man-remastered-voucher",
+    "href": "https://dayjhostore.com/games/marvels-spider-man-remastered-voucher-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1716958509_32eb3761a6effa5cd970.webp",
+    "filename": "marvel-s-spider-man-remastered-voucher.webp",
+    "local_path": "/assets/games/marvel-s-spider-man-remastered-voucher.webp"
+  },
+  {
+    "name": "Love and Deepspace",
+    "slug": "love-and-deepspace",
+    "href": "https://dayjhostore.com/games/love-and-deepspace-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1716958666_aec89ddbcaff8c56944d.jpg",
+    "filename": "love-and-deepspace.jpg",
+    "local_path": "/assets/games/love-and-deepspace.jpg"
+  },
+  {
+    "name": "Legacy Fate : Sacred &amp; Farless",
+    "slug": "legacy-fate-sacred-amp-farless",
+    "href": "https://dayjhostore.com/games/legacy-fate-sacred-farless-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1716956672_b5afede9ab659ddf0547.webp",
+    "filename": "legacy-fate-sacred-amp-farless.webp",
+    "local_path": "/assets/games/legacy-fate-sacred-amp-farless.webp"
+  },
+  {
+    "name": "Heroic Uncle Kim",
+    "slug": "heroic-uncle-kim",
+    "href": "https://dayjhostore.com/games/heroic-uncle-kim-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1716957343_7b5cffaae671c2752d56.jpg",
+    "filename": "heroic-uncle-kim.jpg",
+    "local_path": "/assets/games/heroic-uncle-kim.jpg"
+  },
+  {
+    "name": "Hago",
+    "slug": "hago",
+    "href": "https://dayjhostore.com/games/hago-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1716957516_c91970647b018bc61d69.webp",
+    "filename": "hago.webp",
+    "local_path": "/assets/games/hago.webp"
+  },
+  {
+    "name": "EOS RED",
+    "slug": "eos-red",
+    "href": "https://dayjhostore.com/games/eos-red-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1716957810_046da3a5ec4ae1dd8e40.webp",
+    "filename": "eos-red.webp",
+    "local_path": "/assets/games/eos-red.webp"
+  },
+  {
+    "name": "Command &amp; Conquer™ : Legions",
+    "slug": "command-amp-conquer-legions",
+    "href": "https://dayjhostore.com/games/command-conquer-legions-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1716958140_0a263cc913957ef5795b.webp",
+    "filename": "command-amp-conquer-legions.webp",
+    "local_path": "/assets/games/command-amp-conquer-legions.webp"
+  },
+  {
+    "name": "Clash Guys",
+    "slug": "clash-guys",
+    "href": "https://dayjhostore.com/games/clash-guys-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1716958228_8ae5604db50b2a5db7f6.webp",
+    "filename": "clash-guys.webp",
+    "local_path": "/assets/games/clash-guys.webp"
+  },
+  {
+    "name": "MapleStory R : Evolution",
+    "slug": "maplestory-r-evolution",
+    "href": "https://dayjhostore.com/games/maplestory-r-evolution-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1716958604_43c7f2f8b40129c58c40.jpg",
+    "filename": "maplestory-r-evolution.jpg",
+    "local_path": "/assets/games/maplestory-r-evolution.jpg"
+  },
+  {
+    "name": "Ragnarok M : Eternal Love",
+    "slug": "ragnarok-m-eternal-love",
+    "href": "https://dayjhostore.com/games/ragnarok-m-eternal-love-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1702544244_46e64310beeeb0c35434.webp",
+    "filename": "ragnarok-m-eternal-love.webp",
+    "local_path": "/assets/games/ragnarok-m-eternal-love.webp"
+  },
+  {
+    "name": "Saint Seiya",
+    "slug": "saint-seiya",
+    "href": "https://dayjhostore.com/games/saint-seiya-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1702544153_eb0a8427880d95469e1e.webp",
+    "filename": "saint-seiya.webp",
+    "local_path": "/assets/games/saint-seiya.webp"
+  },
+  {
+    "name": "Ragnarok X",
+    "slug": "ragnarok-x",
+    "href": "https://dayjhostore.com/games/ragnarok-x-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1693885906_483259975bae81527cc2.webp",
+    "filename": "ragnarok-x.webp",
+    "local_path": "/assets/games/ragnarok-x.webp"
+  },
+  {
+    "name": "Naruto : Slugfest X",
+    "slug": "naruto-slugfest-x",
+    "href": "https://dayjhostore.com/games/naruto-slugfest-x-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705223201_64da692931c2a1c41e1d.webp",
+    "filename": "naruto-slugfest-x.webp",
+    "local_path": "/assets/games/naruto-slugfest-x.webp"
+  },
+  {
+    "name": "One Punch Man : The Strongest",
+    "slug": "one-punch-man-the-strongest",
+    "href": "https://dayjhostore.com/games/one-punch-man-the-strongest-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1702544215_aab925102cf45d1f3b26.webp",
+    "filename": "one-punch-man-the-strongest.webp",
+    "local_path": "/assets/games/one-punch-man-the-strongest.webp"
+  },
+  {
+    "name": "Omega Legends",
+    "slug": "omega-legends",
+    "href": "https://dayjhostore.com/games/omega-legends-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705141472_45074676adc49cb21f63.webp",
+    "filename": "omega-legends.webp",
+    "local_path": "/assets/games/omega-legends.webp"
+  },
+  {
+    "name": "Never After",
+    "slug": "never-after",
+    "href": "https://dayjhostore.com/games/never-after-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705224193_a9fd6afb6b602f590672.webp",
+    "filename": "never-after.webp",
+    "local_path": "/assets/games/never-after.webp"
+  },
+  {
+    "name": "Sky : Children of the Light",
+    "slug": "sky-children-of-the-light",
+    "href": "https://dayjhostore.com/games/sky-children-of-the-light-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705224224_4eb58bbc5ca5571e7535.webp",
+    "filename": "sky-children-of-the-light.webp",
+    "local_path": "/assets/games/sky-children-of-the-light.webp"
+  },
+  {
+    "name": "Sausage Man",
+    "slug": "sausage-man",
+    "href": "https://dayjhostore.com/games/sausage-man-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705141424_64bcebdcf5a02a98145d.webp",
+    "filename": "sausage-man.webp",
+    "local_path": "/assets/games/sausage-man.webp"
+  },
+  {
+    "name": "ZEPETO",
+    "slug": "zepeto",
+    "href": "https://dayjhostore.com/games/zepeto-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705141415_d56b7c200d11baaa6ff1.webp",
+    "filename": "zepeto.webp",
+    "local_path": "/assets/games/zepeto.webp"
+  },
+  {
+    "name": "Super Mecha Champions",
+    "slug": "super-mecha-champions",
+    "href": "https://dayjhostore.com/games/super-mecha-champions-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705223640_52de68502aa7e5e4f233.webp",
+    "filename": "super-mecha-champions.webp",
+    "local_path": "/assets/games/super-mecha-champions.webp"
+  },
+  {
+    "name": "Super SUS",
+    "slug": "super-sus",
+    "href": "https://dayjhostore.com/games/super-sus-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705224118_d9c4e8d650f5314c0462.webp",
+    "filename": "super-sus.webp",
+    "local_path": "/assets/games/super-sus.webp"
+  },
+  {
+    "name": "Tom and Jerry: Chase",
+    "slug": "tom-and-jerry-chase",
+    "href": "https://dayjhostore.com/games/tom-and-jerry-chase-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705141448_224ee5de4dd63a914340.webp",
+    "filename": "tom-and-jerry-chase.webp",
+    "local_path": "/assets/games/tom-and-jerry-chase.webp"
+  },
+  {
+    "name": "MU Origin 2",
+    "slug": "mu-origin-2",
+    "href": "https://dayjhostore.com/games/mu-origin-2-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705141440_415be688c81af1f81d5e.webp",
+    "filename": "mu-origin-2.webp",
+    "local_path": "/assets/games/mu-origin-2.webp"
+  },
+  {
+    "name": "Magic Chess : Go Go",
+    "slug": "magic-chess-go-go",
+    "href": "https://dayjhostore.com/games/magic-chess-go-go",
+    "image_url": "https://dayjhostore.com/assets/images/games/1740209388_c34d7025b335bebf83b9.webp",
+    "filename": "magic-chess-go-go.webp",
+    "local_path": "/assets/games/magic-chess-go-go.webp"
+  },
+  {
+    "name": "8 Ball Pool",
+    "slug": "8-ball-pool",
+    "href": "https://dayjhostore.com/games/8-ball-pool-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705141351_436921a58fb65947fb62.webp",
+    "filename": "8-ball-pool.webp",
+    "local_path": "/assets/games/8-ball-pool.webp"
+  },
+  {
+    "name": "Arena Breakout",
+    "slug": "arena-breakout",
+    "href": "https://dayjhostore.com/games/arena-breakout-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705223646_7a5224be39979478b728.webp",
+    "filename": "arena-breakout.webp",
+    "local_path": "/assets/games/arena-breakout.webp"
+  },
+  {
+    "name": "Badlanders",
+    "slug": "badlanders",
+    "href": "https://dayjhostore.com/games/badlanders-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705223705_7615c9b73c44101065e4.webp",
+    "filename": "badlanders.webp",
+    "local_path": "/assets/games/badlanders.webp"
+  },
+  {
+    "name": "Be The King : Judge Destiny",
+    "slug": "be-the-king-judge-destiny",
+    "href": "https://dayjhostore.com/games/be-the-king-judge-destiny-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705141491_97a779e85861555857fa.webp",
+    "filename": "be-the-king-judge-destiny.webp",
+    "local_path": "/assets/games/be-the-king-judge-destiny.webp"
+  },
+  {
+    "name": "BLEACH Mobile 3D",
+    "slug": "bleach-mobile-3d",
+    "href": "https://dayjhostore.com/games/bleach-mobile-3d-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705223697_c234b43d1ab79a6cd440.webp",
+    "filename": "bleach-mobile-3d.webp",
+    "local_path": "/assets/games/bleach-mobile-3d.webp"
+  },
+  {
+    "name": "MU Origin 3",
+    "slug": "mu-origin-3",
+    "href": "https://dayjhostore.com/games/mu-origin-3-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705223766_d78ada0fe4ebc1cd9c67.webp",
+    "filename": "mu-origin-3.webp",
+    "local_path": "/assets/games/mu-origin-3.webp"
+  },
+  {
+    "name": "Lords Mobile",
+    "slug": "lords-mobile",
+    "href": "https://dayjhostore.com/games/lords-mobile-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705141432_fa01c52735749a64b1ce.webp",
+    "filename": "lords-mobile.webp",
+    "local_path": "/assets/games/lords-mobile.webp"
+  },
+  {
+    "name": "Misty Continent",
+    "slug": "misty-continent",
+    "href": "https://dayjhostore.com/games/misty-continent-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705224088_49c0cdf5dc503589e828.webp",
+    "filename": "misty-continent.webp",
+    "local_path": "/assets/games/misty-continent.webp"
+  },
+  {
+    "name": "Guns of Glory",
+    "slug": "guns-of-glory",
+    "href": "https://dayjhostore.com/games/guns-of-glory-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705141498_2e1280390a26a5f82d9c.webp",
+    "filename": "guns-of-glory.webp",
+    "local_path": "/assets/games/guns-of-glory.webp"
+  },
+  {
+    "name": "Cloud Song : Saga of Skywalkers",
+    "slug": "cloud-song-saga-of-skywalkers",
+    "href": "https://dayjhostore.com/games/cloud-song-saga-of-skywalkers-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705223681_4df3494f789e735e8f0a.webp",
+    "filename": "cloud-song-saga-of-skywalkers.webp",
+    "local_path": "/assets/games/cloud-song-saga-of-skywalkers.webp"
+  },
+  {
+    "name": "Dragon Raja",
+    "slug": "dragon-raja",
+    "href": "https://dayjhostore.com/games/dragon-raja-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705141457_ff82bbf4a04e9d168e34.webp",
+    "filename": "dragon-raja.webp",
+    "local_path": "/assets/games/dragon-raja.webp"
+  },
+  {
+    "name": "Echocalypse",
+    "slug": "echocalypse",
+    "href": "https://dayjhostore.com/games/echocalypse-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705223666_7ed57f186a56e8558fc2.webp",
+    "filename": "echocalypse.webp",
+    "local_path": "/assets/games/echocalypse.webp"
+  },
+  {
+    "name": "Eggy Party",
+    "slug": "eggy-party",
+    "href": "https://dayjhostore.com/games/eggy-party-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705224202_cd5ce665030823d0dae2.webp",
+    "filename": "eggy-party.webp",
+    "local_path": "/assets/games/eggy-party.webp"
+  },
+  {
+    "name": "Farlight 84",
+    "slug": "farlight-84",
+    "href": "https://dayjhostore.com/games/farlight-84-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705224096_acab42f474ecc6c35a08.webp",
+    "filename": "farlight-84.webp",
+    "local_path": "/assets/games/farlight-84.webp"
+  },
+  {
+    "name": "Football Master 2",
+    "slug": "football-master-2",
+    "href": "https://dayjhostore.com/games/football-master-2-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705223612_c719464b35e0ed03a514.webp",
+    "filename": "football-master-2.webp",
+    "local_path": "/assets/games/football-master-2.webp"
+  },
+  {
+    "name": "Goddess of Victory: Nikke",
+    "slug": "goddess-of-victory-nikke",
+    "href": "https://dayjhostore.com/games/goddess-of-victory-nikke-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1698379100_a785492cf8b9aa29c24c.webp",
+    "filename": "goddess-of-victory-nikke.webp",
+    "local_path": "/assets/games/goddess-of-victory-nikke.webp"
+  },
+  {
+    "name": "Growtopia",
+    "slug": "growtopia",
+    "href": "https://dayjhostore.com/games/growtopia-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705223740_4a3a105b5c456ce398f8.webp",
+    "filename": "growtopia.webp",
+    "local_path": "/assets/games/growtopia.webp"
+  },
+  {
+    "name": "Heroes Evolved",
+    "slug": "heroes-evolved",
+    "href": "https://dayjhostore.com/games/heroes-evolved-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705224040_d16addf2b730469db367.webp",
+    "filename": "heroes-evolved.webp",
+    "local_path": "/assets/games/heroes-evolved.webp"
+  },
+  {
+    "name": "Mirage : Perfect Skyline",
+    "slug": "mirage-perfect-skyline",
+    "href": "https://dayjhostore.com/games/mirage-perfect-skyline-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705224105_f5a077cea547136c5cea.webp",
+    "filename": "mirage-perfect-skyline.webp",
+    "local_path": "/assets/games/mirage-perfect-skyline.webp"
+  },
+  {
+    "name": "Honkai Impact 3",
+    "slug": "honkai-impact-3",
+    "href": "https://dayjhostore.com/games/honkai-impact-3-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705224081_0059576a9c20210b3852.webp",
+    "filename": "honkai-impact-3.webp",
+    "local_path": "/assets/games/honkai-impact-3.webp"
+  },
+  {
+    "name": "Identity V",
+    "slug": "identity-v",
+    "href": "https://dayjhostore.com/games/identity-v-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705224137_e15f5dbcef6850b97fa0.webp",
+    "filename": "identity-v.webp",
+    "local_path": "/assets/games/identity-v.webp"
+  },
+  {
+    "name": "Idle Legends : GODS SAGA",
+    "slug": "idle-legends-gods-saga",
+    "href": "https://dayjhostore.com/games/idle-legends-gods-saga-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705223758_92f3f36864f4b86713ec.webp",
+    "filename": "idle-legends-gods-saga.webp",
+    "local_path": "/assets/games/idle-legends-gods-saga.webp"
+  },
+  {
+    "name": "Jade Legends: Immortal Realm",
+    "slug": "jade-legends-immortal-realm",
+    "href": "https://dayjhostore.com/games/jade-legends-immortal-realm-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705224128_88be2a89b5bb0c614bee.webp",
+    "filename": "jade-legends-immortal-realm.webp",
+    "local_path": "/assets/games/jade-legends-immortal-realm.webp"
+  },
+  {
+    "name": "Laplace M",
+    "slug": "laplace-m",
+    "href": "https://dayjhostore.com/games/laplace-m-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705223628_29bf4f5b71e2890c380e.webp",
+    "filename": "laplace-m.webp",
+    "local_path": "/assets/games/laplace-m.webp"
+  },
+  {
+    "name": "League of Legends : Wild Rift",
+    "slug": "league-of-legends-wild-rift",
+    "href": "https://dayjhostore.com/games/league-of-legends-wild-rift-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705224173_8fa37f2cf20b6e2595c9.webp",
+    "filename": "league-of-legends-wild-rift.webp",
+    "local_path": "/assets/games/league-of-legends-wild-rift.webp"
+  },
+  {
+    "name": "Life After",
+    "slug": "life-after",
+    "href": "https://dayjhostore.com/games/life-after-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705141466_4dbfe9757da17a9cd14d.webp",
+    "filename": "life-after.webp",
+    "local_path": "/assets/games/life-after.webp"
+  },
+  {
+    "name": "MARVEL Super War",
+    "slug": "marvel-super-war",
+    "href": "https://dayjhostore.com/games/marvel-super-war-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705141482_c2e9dc9611eeed39041a.webp",
+    "filename": "marvel-super-war.webp",
+    "local_path": "/assets/games/marvel-super-war.webp"
+  },
+  {
+    "name": "Miko Era : Twelve Myths",
+    "slug": "miko-era-twelve-myths",
+    "href": "https://dayjhostore.com/games/miko-era-twelve-myths-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705224216_cc0a171ab575111c9482.webp",
+    "filename": "miko-era-twelve-myths.webp",
+    "local_path": "/assets/games/miko-era-twelve-myths.webp"
+  },
+  {
+    "name": "Chimeraland",
+    "slug": "chimeraland",
+    "href": "https://dayjhostore.com/games/chimeraland-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1702595323_535e51a0d5f51324c73e.webp",
+    "filename": "chimeraland.webp",
+    "local_path": "/assets/games/chimeraland.webp"
+  },
+  {
+    "name": "Crunchyroll - Voucher",
+    "slug": "crunchyroll-voucher",
+    "href": "https://dayjhostore.com/games/crunchyroll-voucher-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1716958053_9fc4f88ba571ae954234.webp",
+    "filename": "crunchyroll-voucher.webp",
+    "local_path": "/assets/games/crunchyroll-voucher.webp"
+  },
+  {
+    "name": "iTunes",
+    "slug": "itunes",
+    "href": "https://dayjhostore.com/games/itunes-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1716956981_8973d9dcf1eae249d7bb.webp",
+    "filename": "itunes.webp",
+    "local_path": "/assets/games/itunes.webp"
+  },
+  {
+    "name": "VIU Premium - Voucher",
+    "slug": "viu-premium-voucher",
+    "href": "https://dayjhostore.com/games/viu-premium-voucher-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1716956587_62e6babc23c6a25b155d.webp",
+    "filename": "viu-premium-voucher.webp",
+    "local_path": "/assets/games/viu-premium-voucher.webp"
+  },
+  {
+    "name": "WeTV VIP - Voucher",
+    "slug": "wetv-vip-voucher",
+    "href": "https://dayjhostore.com/games/wetv-vip-voucher-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1716956472_381b3acccf7138ca02ab.webp",
+    "filename": "wetv-vip-voucher.webp",
+    "local_path": "/assets/games/wetv-vip-voucher.webp"
+  },
+  {
+    "name": "eFootball 2024 - Voucher",
+    "slug": "efootball-2024-voucher",
+    "href": "https://dayjhostore.com/games/efootball-2024-voucher-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1716957868_ee4bb74f59bf8bf40874.jpg",
+    "filename": "efootball-2024-voucher.jpg",
+    "local_path": "/assets/games/efootball-2024-voucher.jpg"
+  },
+  {
+    "name": "Eudemons Online",
+    "slug": "eudemons-online",
+    "href": "https://dayjhostore.com/games/eudemons-online-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705224158_2e67413d2102b4f887e1.webp",
+    "filename": "eudemons-online.webp",
+    "local_path": "/assets/games/eudemons-online.webp"
+  },
+  {
+    "name": "Valorant - Voucher",
+    "slug": "valorant-voucher",
+    "href": "https://dayjhostore.com/games/valorant-voucher-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705223987_a29fec459a1d376d3bec.webp",
+    "filename": "valorant-voucher.webp",
+    "local_path": "/assets/games/valorant-voucher.webp"
+  },
+  {
+    "name": "Vidio - Voucher",
+    "slug": "vidio-voucher",
+    "href": "https://dayjhostore.com/games/vidio-voucher-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705223773_3d7fb4f3ebf1ecdace49.webp",
+    "filename": "vidio-voucher.webp",
+    "local_path": "/assets/games/vidio-voucher.webp"
+  },
+  {
+    "name": "Blizzard Gift Card",
+    "slug": "blizzard-gift-card",
+    "href": "https://dayjhostore.com/games/blizzard-gift-card-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1698377748_fc316e6edcb182467901.webp",
+    "filename": "blizzard-gift-card.webp",
+    "local_path": "/assets/games/blizzard-gift-card.webp"
+  },
+  {
+    "name": "REELSHORT",
+    "slug": "reelshort",
+    "href": "https://dayjhostore.com/games/reelshort",
+    "image_url": "https://dayjhostore.com/assets/images/games/1774853276_5a9a8de2d88d241bf108.jpg",
+    "filename": "reelshort.jpg",
+    "local_path": "/assets/games/reelshort.jpg"
+  },
+  {
+    "name": "STARDUST",
+    "slug": "stardust",
+    "href": "https://dayjhostore.com/games/stardust",
+    "image_url": "https://dayjhostore.com/assets/images/games/1774853613_9f1b2144f97667415c69.png",
+    "filename": "stardust.png",
+    "local_path": "/assets/games/stardust.png"
+  },
+  {
+    "name": "DRAMABOX",
+    "slug": "dramabox",
+    "href": "https://dayjhostore.com/games/dramabox",
+    "image_url": "https://dayjhostore.com/assets/images/games/1774854622_0bcf342ebcd72a17325b.jpg",
+    "filename": "dramabox.jpg",
+    "local_path": "/assets/games/dramabox.jpg"
+  },
+  {
+    "name": "DRAMAWAVE",
+    "slug": "dramawave",
+    "href": "https://dayjhostore.com/games/dramawave",
+    "image_url": "https://dayjhostore.com/assets/images/games/1774854627_d122c9d5a90d2f47f26f.png",
+    "filename": "dramawave.png",
+    "local_path": "/assets/games/dramawave.png"
+  },
+  {
+    "name": "GOODSHORT",
+    "slug": "goodshort",
+    "href": "https://dayjhostore.com/games/goodshort",
+    "image_url": "https://dayjhostore.com/assets/images/games/1774854634_46aac91fde3de0e88faf.webp",
+    "filename": "goodshort.webp",
+    "local_path": "/assets/games/goodshort.webp"
+  },
+  {
+    "name": "MELOLO",
+    "slug": "melolo",
+    "href": "https://dayjhostore.com/games/melolo",
+    "image_url": "https://dayjhostore.com/assets/images/games/1774854639_11bf793e572f611b47a2.png",
+    "filename": "melolo.png",
+    "local_path": "/assets/games/melolo.png"
+  },
+  {
+    "name": "IDRAMA",
+    "slug": "idrama",
+    "href": "https://dayjhostore.com/games/idrama",
+    "image_url": "https://dayjhostore.com/assets/images/games/1774854645_d6c57cfef68f3413df59.jpg",
+    "filename": "idrama.jpg",
+    "local_path": "/assets/games/idrama.jpg"
+  },
+  {
+    "name": "DRAMABITE",
+    "slug": "dramabite",
+    "href": "https://dayjhostore.com/games/dramabite",
+    "image_url": "https://dayjhostore.com/assets/images/games/1774854689_4297bfd9cfe5d307150e.jpg",
+    "filename": "dramabite.jpg",
+    "local_path": "/assets/games/dramabite.jpg"
+  },
+  {
+    "name": "NETSHORT",
+    "slug": "netshort",
+    "href": "https://dayjhostore.com/games/netshort",
+    "image_url": "https://dayjhostore.com/assets/images/games/1774854696_41cc0c545ff6ae2b2e0d.jpg",
+    "filename": "netshort.jpg",
+    "local_path": "/assets/games/netshort.jpg"
+  },
+  {
+    "name": "FLICKREELS",
+    "slug": "flickreels",
+    "href": "https://dayjhostore.com/games/flickreels",
+    "image_url": "https://dayjhostore.com/assets/images/games/1774854706_a8afa20116dafdadd838.png",
+    "filename": "flickreels.png",
+    "local_path": "/assets/games/flickreels.png"
+  },
+  {
+    "name": "SHORTMAX",
+    "slug": "shortmax",
+    "href": "https://dayjhostore.com/games/shortmax",
+    "image_url": "https://dayjhostore.com/assets/images/games/1774854714_2a3b6b49a8b13dacaff9.webp",
+    "filename": "shortmax.webp",
+    "local_path": "/assets/games/shortmax.webp"
+  },
+  {
+    "name": "SNACKSHORT",
+    "slug": "snackshort",
+    "href": "https://dayjhostore.com/games/snackshort",
+    "image_url": "https://dayjhostore.com/assets/images/games/1774854720_5a35019c5f9a07e5ff3f.png",
+    "filename": "snackshort.png",
+    "local_path": "/assets/games/snackshort.png"
+  },
+  {
+    "name": "BILITV",
+    "slug": "bilitv",
+    "href": "https://dayjhostore.com/games/bilitv",
+    "image_url": "https://dayjhostore.com/assets/images/games/1774854726_b86b04cbb5693f0f9931.jpg",
+    "filename": "bilitv.jpg",
+    "local_path": "/assets/games/bilitv.jpg"
+  },
+  {
+    "name": "DRAMAPOPS",
+    "slug": "dramapops",
+    "href": "https://dayjhostore.com/games/dramapops",
+    "image_url": "https://dayjhostore.com/assets/images/games/1774854748_4f6c5678c1319ea78cdd.png",
+    "filename": "dramapops.png",
+    "local_path": "/assets/games/dramapops.png"
+  },
+  {
+    "name": "Axis",
+    "slug": "axis",
+    "href": "https://dayjhostore.com/games/axis-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1698379694_f56784cc636f2847696d.webp",
+    "filename": "axis.webp",
+    "local_path": "/assets/games/axis.webp"
+  },
+  {
+    "name": "XL",
+    "slug": "xl",
+    "href": "https://dayjhostore.com/games/xl-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1698379619_b30c685e1a79e361d518.webp",
+    "filename": "xl.webp",
+    "local_path": "/assets/games/xl.webp"
+  },
+  {
+    "name": "Telkomsel",
+    "slug": "telkomsel",
+    "href": "https://dayjhostore.com/games/telkomsel-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1698379663_992d248ce782af6e5dca.webp",
+    "filename": "telkomsel.webp",
+    "local_path": "/assets/games/telkomsel.webp"
+  },
+  {
+    "name": "Smartfren",
+    "slug": "smartfren",
+    "href": "https://dayjhostore.com/games/smartfren-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1698379679_8fd230fb6a14283306cc.webp",
+    "filename": "smartfren.webp",
+    "local_path": "/assets/games/smartfren.webp"
+  },
+  {
+    "name": "Indosat",
+    "slug": "indosat",
+    "href": "https://dayjhostore.com/games/indosat-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1698379708_9445a3b63e8ccb65f7d9.webp",
+    "filename": "indosat.webp",
+    "local_path": "/assets/games/indosat.webp"
+  },
+  {
+    "name": "BIGO Live",
+    "slug": "bigo-live",
+    "href": "https://dayjhostore.com/games/bigo-live-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705224049_6ced314a58483bf1b840.webp",
+    "filename": "bigo-live.webp",
+    "local_path": "/assets/games/bigo-live.webp"
+  },
+  {
+    "name": "Sugar Live",
+    "slug": "sugar-live",
+    "href": "https://dayjhostore.com/games/sugar-live-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705224072_2466b6014014f38e9e30.webp",
+    "filename": "sugar-live.webp",
+    "local_path": "/assets/games/sugar-live.webp"
+  },
+  {
+    "name": "Mango Live",
+    "slug": "mango-live",
+    "href": "https://dayjhostore.com/games/mango-live-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705224063_39142797c377aaee8e0b.webp",
+    "filename": "mango-live.webp",
+    "local_path": "/assets/games/mango-live.webp"
+  },
+  {
+    "name": "Lita",
+    "slug": "lita",
+    "href": "https://dayjhostore.com/games/lita-games",
+    "image_url": "https://dayjhostore.com/assets/images/games/1705224056_9270110b39f822ef6a34.webp",
+    "filename": "lita.webp",
+    "local_path": "/assets/games/lita.webp"
+  },
+  {
+    "name": "Joki MLBB",
+    "slug": "joki-mlbb",
+    "href": "https://dayjhostore.com/games/joki-mlbb",
+    "image_url": "https://dayjhostore.com/assets/images/games/1736319641_514785691ed39ce39f15.webp",
+    "filename": "joki-mlbb.webp",
+    "local_path": "/assets/games/joki-mlbb.webp"
+  }
+]
