@@ -5,7 +5,7 @@ const FEATURES = [
   {
     icon: Zap,
     title: "Bayar dalam Hitungan Detik",
-    description: "Hanya butuh beberapa detik untuk menyelesaikan pembelian di YUMASHOP tanpa perlu registrasi yang rumit.",
+    description: "Hanya butuh beberapa detik untuk menyelesaikan pembelian di YUMATOPUP tanpa perlu registrasi yang rumit.",
     color: "from-amber-400 to-orange-500",
     bgIcon: "bg-amber-500/10 text-amber-400 border-amber-500/20"
   },
@@ -40,7 +40,7 @@ const FEATURES = [
   {
     icon: ShieldCheck,
     title: "100% Legal & Terpercaya",
-    description: "YUMASHOP adalah distributor resmi yang bekerja sama langsung dengan publisher game terkemuka di dunia.",
+    description: "YUMATOPUP adalah distributor resmi yang bekerja sama langsung dengan publisher game terkemuka di dunia.",
     color: "from-cyan-400 to-blue-500",
     bgIcon: "bg-cyan-500/10 text-cyan-400 border-cyan-500/20"
   }
@@ -54,7 +54,7 @@ export default function FeaturesSection() {
           Website Top-Up Terbesar, Tercepat & Terpercaya di Indonesia
         </h2>
         <p className="text-xs sm:text-sm text-slate-400 mt-2">
-          Jutaan gamers Indonesia mempercayakan kebutuhan voucher dan top-up game mereka kepada YUMASHOP setiap hari.
+          Jutaan gamers Indonesia mempercayakan kebutuhan voucher dan top-up game mereka kepada YUMATOPUP setiap hari.
         </p>
       </div>
 

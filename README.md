@@ -1,6 +1,6 @@
-# ⚡ YUMASHOP - Modern Game Top-Up Store
+# ⚡ YUMATOPUP - Modern Game Top-Up Store (yumatopup.com)
 
-YUMASHOP adalah platform top-up voucher game dan produk digital modern, cepat, dan responsif yang terinspirasi dari UI/UX Codashop dan katalog Dayjhostore.
+YUMATOPUP adalah platform top-up voucher game dan produk digital modern, cepat, dan responsif yang terinspirasi dari UI/UX Codashop dan katalog Dayjhostore.
 
 Built with **React**, **Vite**, and **Tailwind CSS**.
 
@@ -8,6 +8,7 @@ Built with **React**, **Vite**, and **Tailwind CSS**.
 
 ## ✨ Fitur Utama
 
+- **Domain Resmi**: [yumatopup.com](https://yumatopup.com)
 - **Catalog Lengkap**: 128+ judul game populer (Mobile Legends, Free Fire, Valorant, Genshin Impact, Honor of Kings, Roblox, Steam, dll.) lengkap dengan poster ikon game.
 - **Top-Up Flow 4 Langkah**:
   1. Input User ID & Zone ID / Server / Role
@@ -20,7 +21,8 @@ Built with **React**, **Vite**, and **Tailwind CSS**.
   - **Convenience Store**: Indomaret, Alfamart
   - **Pulsa / SMS**: Telkomsel, Indosat Ooredoo, Tri, XL Axiata
 - **Desain & UI/UX Premium**:
-  - Branding kustom: **YUMA SHOP** Cyber-cut Typography Logo & Emblem
+  - Branding kustom: **YUMA TOPUP** Official Emblem & Typography Logo
+  - Full SEO Meta Tags, Open Graph, Twitter Cards & Web App Manifest
   - 100% Vector SVG Icons (Zero Emoji UI)
   - Glassmorphic Unified Modals (Alert, Confirm, Prompt, Notification)
   - Shimmer Skeleton Loading states
@@ -38,7 +40,7 @@ Built with **React**, **Vite**, and **Tailwind CSS**.
 
 ```bash
 # Clone repository
-git clone https://github.com/yudadwiptr/yumashop.git
+git clone https://github.com/yudadwiptr/yumatopup.git
 cd yumashop
 
 # Install dependensi
@@ -71,4 +73,4 @@ Hasil build akan berada di direktori `dist/` dan siap dideploy ke Vercel, Netlif
 ---
 
 ## 📄 Lisensi
-MIT License © 2026 YUMASHOP
+MIT License © 2026 YUMATOPUP (PT Yuma Digital Solusindo). Seluruh hak cipta dilindungi undang-undang.

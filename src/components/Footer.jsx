@@ -25,16 +25,16 @@ export default function Footer() {
   return (
     <footer className="bg-[#0f0a20] border-t border-[#29204a] text-left pt-12 pb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Main Footer Links & Info */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-10 border-b border-[#241a42]">
-          
+
           {/* Brand Column */}
           <div className="lg:col-span-2 space-y-4">
             <YumaShopLogo />
 
             <p className="text-xs text-slate-400 leading-relaxed max-w-sm">
-              YUMASHOP adalah platform top up game dan voucher digital termurah, tercepat, dan terpercaya di Indonesia. Dapatkan pengiriman item otomatis dalam hitungan detik dengan dukungan metode pembayaran terlengkap.
+              YUMATOPUP adalah platform top up game dan voucher digital termurah, tercepat, dan terpercaya di Indonesia. Dapatkan pengiriman item otomatis dalam hitungan detik dengan dukungan metode pembayaran terlengkap.
             </p>
 
             <div className="flex items-center gap-2 text-xs text-slate-300">
@@ -45,7 +45,7 @@ export default function Footer() {
 
           {/* Nav Column 1 */}
           <div>
-            <h4 className="text-sm font-bold text-white mb-3">Tentang YUMASHOP</h4>
+            <h4 className="text-sm font-bold text-white mb-3">Tentang YUMATOPUP</h4>
             <ul className="space-y-2 text-xs text-slate-400">
               <li><a href="#" className="hover:text-purple-300 transition-colors">Tentang Kami</a></li>
               <li><a href="#" className="hover:text-purple-300 transition-colors">Karir & Peluang</a></li>
@@ -88,13 +88,13 @@ export default function Footer() {
           </div>
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3">
             {DAYJHO_PAYMENT_LOGOS.map((pay) => (
-              <div 
-                key={pay.name} 
+              <div
+                key={pay.name}
                 className="h-12 bg-white rounded-xl p-2 flex items-center justify-center shadow-md hover:scale-105 transition-transform"
                 title={pay.name}
               >
-                <img 
-                  src={pay.image} 
+                <img
+                  src={pay.image}
                   alt={pay.name}
                   className="max-h-7 max-w-[85px] object-contain"
                 />
@@ -106,7 +106,7 @@ export default function Footer() {
         {/* Bottom Copyright & Disclaimer */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>
-            &copy; 2026 PT Yuma Digital Solusindo (YUMASHOP Indonesia). Seluruh hak cipta dilindungi undang-undang.
+            &copy; 2026 PT Yuma Digital Solusindo (YUMATOPUP Indonesia - yumatopup.com). Seluruh hak cipta dilindungi undang-undang.
           </p>
           <p className="text-[11px] max-w-xl text-center md:text-right">
             Seluruh nama dagang, logo game, dan karya seni yang ditampilkan adalah hak milik dari masing-masing penerbit (publisher) game.

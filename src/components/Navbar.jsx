@@ -1,16 +1,12 @@
 import React, { useState } from 'react';
-import { 
-  Search, 
-  Bell, 
-  User, 
-  Menu, 
-  X, 
-  Globe, 
-  ChevronDown, 
-  Sparkles, 
-  ShieldCheck,
-  Zap,
-  Gamepad2
+import {
+  Search,
+  Bell,
+  User,
+  Menu,
+  X,
+  Sparkles,
+  ShieldCheck
 } from 'lucide-react';
 import { IndonesiaFlag } from './PaymentLogos';
 import YumaShopLogo from './YumaShopLogo';
@@ -21,8 +17,8 @@ export default function Navbar({ onSearch, onSelectGame, games = [], onOpenAuth 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [notificationOpen, setNotificationOpen] = useState(false);
 
-  const filteredGames = searchQuery.trim() === '' 
-    ? [] 
+  const filteredGames = searchQuery.trim() === ''
+    ? []
     : games.filter(g => g.name.toLowerCase().includes(searchQuery.toLowerCase())).slice(0, 5);
 
   const handleSearchSubmit = (e) => {
@@ -40,7 +36,7 @@ export default function Navbar({ onSearch, onSelectGame, games = [], onOpenAuth 
     <header className="sticky top-0 z-50 bg-[#120d24]/95 backdrop-blur-md border-b border-[#2d244c]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20 gap-4">
-          
+
           {/* Brand Logo */}
           <div className="cursor-pointer" onClick={() => onSelectGame(null)}>
             <YumaShopLogo />
@@ -74,9 +70,9 @@ export default function Navbar({ onSearch, onSelectGame, games = [], onOpenAuth 
                       onClick={() => handleSelectSearchResult(game)}
                       className="flex items-center gap-3 p-3 hover:bg-[#281f4a] cursor-pointer transition-colors"
                     >
-                      <img 
-                        src={game.thumbnail} 
-                        alt={game.name} 
+                      <img
+                        src={game.thumbnail}
+                        alt={game.name}
                         className="w-10 h-10 rounded-lg object-cover border border-[#44386e]"
                       />
                       <div className="flex-1 min-w-0">
@@ -95,7 +91,7 @@ export default function Navbar({ onSearch, onSelectGame, games = [], onOpenAuth 
 
           {/* Right Action Menu */}
           <div className="flex items-center gap-2 sm:gap-4">
-            
+
             {/* Region / Currency Indicator */}
             <div className="hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#1e1738] border border-[#322858] text-xs font-medium text-slate-300">
               <IndonesiaFlag className="w-4 h-3" />
@@ -104,7 +100,7 @@ export default function Navbar({ onSearch, onSelectGame, games = [], onOpenAuth 
 
             {/* Notification Bell */}
             <div className="relative">
-              <button 
+              <button
                 onClick={() => setNotificationOpen(!notificationOpen)}
                 className="p-2.5 rounded-full bg-[#1e1738] hover:bg-[#281f4a] text-slate-300 hover:text-white border border-[#322858] transition-colors relative"
                 title="Notifikasi Promo"
@@ -131,7 +127,7 @@ export default function Navbar({ onSearch, onSelectGame, games = [], onOpenAuth 
                       <div className="font-bold text-emerald-400 flex items-center gap-1">
                         <ShieldCheck className="w-3.5 h-3.5" /> Transaksi 100% Aman
                       </div>
-                      <p className="text-slate-300 mt-1">YUMASHOP telah resmi bekerja sama langsung dengan publisher game internasional.</p>
+                      <p className="text-slate-300 mt-1">YUMATOPUP telah resmi bekerja sama langsung dengan publisher game internasional.</p>
                     </div>
                   </div>
                 </div>
@@ -140,7 +136,7 @@ export default function Navbar({ onSearch, onSelectGame, games = [], onOpenAuth 
 
             {/* Auth Buttons */}
             <div className="flex items-center gap-2">
-              <button 
+              <button
                 onClick={onOpenAuth}
                 className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-slate-200 hover:text-white bg-[#1e1738] hover:bg-[#281f4a] border border-[#372d5b] transition-all"
               >
@@ -148,7 +144,7 @@ export default function Navbar({ onSearch, onSelectGame, games = [], onOpenAuth 
                 <span>Masuk</span>
               </button>
 
-              <button 
+              <button
                 onClick={onOpenAuth}
                 className="inline-flex items-center justify-center px-4 py-2 sm:px-5 sm:py-2 rounded-full text-xs sm:text-sm font-bold text-white bg-gradient-to-r from-[#6242fc] via-[#7d3ff5] to-[#f54291] hover:brightness-110 shadow-lg shadow-purple-600/30 transition-all transform active:scale-95"
               >
@@ -157,7 +153,7 @@ export default function Navbar({ onSearch, onSelectGame, games = [], onOpenAuth 
             </div>
 
             {/* Mobile Menu Toggle */}
-            <button 
+            <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="md:hidden p-2 rounded-xl bg-[#1e1738] text-slate-300 hover:text-white border border-[#322858]"
             >
@@ -191,13 +187,13 @@ export default function Navbar({ onSearch, onSelectGame, games = [], onOpenAuth 
               </span>
             </div>
             <div className="grid grid-cols-2 gap-2 pt-2">
-              <button 
+              <button
                 onClick={() => { setMobileMenuOpen(false); onOpenAuth(); }}
                 className="w-full py-2.5 rounded-xl bg-[#1e1738] text-slate-200 text-xs font-semibold border border-[#372d5b]"
               >
                 Masuk
               </button>
-              <button 
+              <button
                 onClick={() => { setMobileMenuOpen(false); onOpenAuth(); }}
                 className="w-full py-2.5 rounded-xl bg-gradient-to-r from-[#6242fc] to-[#f54291] text-white text-xs font-bold shadow"
               >

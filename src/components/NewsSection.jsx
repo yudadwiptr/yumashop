@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, ArrowRight, Sparkles } from 'lucide-react';
+import { Calendar, ArrowRight } from 'lucide-react';
 import { NEWS_LIST } from '../data/mockData';
 
 export default function NewsSection({ onOpenNews }) {
@@ -7,8 +7,8 @@ export default function NewsSection({ onOpenNews }) {
     if (onOpenNews) {
       onOpenNews({
         type: 'info',
-        title: 'Arsip Berita & Promo YUMASHOP',
-        message: 'Seluruh pembaruan event game, jadwal maintenance, turnamen, dan penawaran cashback terupdate secara realtime di saluran resmi YUMASHOP.'
+        title: 'Arsip Berita & Promo YUMATOPUP',
+        message: 'Seluruh pembaruan event game, jadwal maintenance, turnamen, dan penawaran cashback terupdate secara realtime di saluran resmi YUMATOPUP.'
       });
     }
   };
@@ -18,7 +18,7 @@ export default function NewsSection({ onOpenNews }) {
       onOpenNews({
         type: 'info',
         title: news.title,
-        message: `${news.excerpt}\n\nTanggal Rilis: ${news.date}. Kategori: ${news.tag}. Pastikan selalu memeriksa kanal resmi YUMASHOP sebelum melakukan transaksi.`
+        message: `${news.excerpt}\n\nTanggal Rilis: ${news.date}. Kategori: ${news.tag}. Pastikan selalu memeriksa kanal resmi YUMATOPUP sebelum melakukan transaksi.`
       });
     }
   };
@@ -31,10 +31,10 @@ export default function NewsSection({ onOpenNews }) {
             News and Updates
           </h2>
           <p className="text-xs text-slate-400 mt-0.5">
-            Berita terbaru, tips keamanan, dan promo game terhangat di YUMASHOP
+            Berita terbaru, tips keamanan, dan promo game terhangat di YUMATOPUP
           </p>
         </div>
-        <button 
+        <button
           onClick={handleShowAll}
           className="hidden sm:inline-flex items-center gap-1.5 text-xs font-bold text-purple-300 hover:text-white cursor-pointer"
         >
@@ -51,8 +51,8 @@ export default function NewsSection({ onOpenNews }) {
             className="group bg-[#1c1537] border border-[#352a5c] hover:border-[#6242fc] rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-1 shadow-lg text-left flex flex-col justify-between"
           >
             <div className="relative aspect-video w-full overflow-hidden bg-[#120d24]">
-              <img 
-                src={news.image} 
+              <img
+                src={news.image}
                 alt={news.title}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />

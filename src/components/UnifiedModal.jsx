@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, ShieldCheck, AlertTriangle, Info, CheckCircle2, Zap } from 'lucide-react';
+import { X, ShieldCheck, AlertTriangle, Info, CheckCircle2 } from 'lucide-react';
 
 export default function UnifiedModal({ isOpen, onClose, config }) {
   if (!isOpen || !config) return null;
@@ -39,7 +39,7 @@ export default function UnifiedModal({ isOpen, onClose, config }) {
       Icon: Info,
       color: 'text-purple-400',
       badgeBg: 'bg-purple-500/20 text-purple-300 border-purple-500/30',
-      badgeText: 'Informasi YUMASHOP',
+      badgeText: 'Informasi YUMATOPUP',
       buttonBg: 'bg-gradient-to-r from-[#6b3bfc] to-[#ff5e3a]'
     }
   };
@@ -50,7 +50,7 @@ export default function UnifiedModal({ isOpen, onClose, config }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-[fadeIn_0.2s_ease-out]">
       <div className="relative w-full max-w-md bg-[#181133] border border-[#3e3066] rounded-3xl shadow-2xl p-6 sm:p-7 text-left overflow-hidden">
-        
+
         {/* Top ambient glow */}
         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#6b3bfc] via-[#ff5e3a] to-[#ffaa00]" />
 
@@ -88,7 +88,7 @@ export default function UnifiedModal({ isOpen, onClose, config }) {
         {items && items.length > 0 && (
           <div className="space-y-2 mb-5">
             {items.map((item, idx) => (
-              <div 
+              <div
                 key={idx}
                 className="p-3 rounded-2xl bg-[#221743] border border-[#382b60] flex items-start gap-2.5 text-xs text-slate-200"
               >

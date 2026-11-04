@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Mail, Phone, Lock, Zap, ShieldCheck, Check } from 'lucide-react';
+import { X, Mail, Lock, Check } from 'lucide-react';
 import YumaShopLogo from './YumaShopLogo';
 
 export default function AuthModal({ isOpen, onClose, onShowSuccess }) {
@@ -16,7 +16,7 @@ export default function AuthModal({ isOpen, onClose, onShowSuccess }) {
       setSubmitted(false);
       onClose();
       if (onShowSuccess) {
-        onShowSuccess(`Selamat datang di YUMASHOP! Akun ${identifier} berhasil masuk.`);
+        onShowSuccess(`Selamat datang di YUMATOPUP! Akun ${identifier} berhasil masuk.`);
       }
     }, 1000);
   };
@@ -24,7 +24,7 @@ export default function AuthModal({ isOpen, onClose, onShowSuccess }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
       <div className="relative w-full max-w-md bg-[#1b1437] border border-[#3f326c] rounded-3xl shadow-2xl p-6 sm:p-8 text-left">
-        
+
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -42,32 +42,30 @@ export default function AuthModal({ isOpen, onClose, onShowSuccess }) {
         <div className="flex rounded-2xl bg-[#241a46] p-1 border border-[#392d63] mb-6">
           <button
             onClick={() => setIsLogin(true)}
-            className={`flex-1 py-2 text-xs font-bold rounded-xl transition-all ${
-              isLogin 
-                ? 'bg-gradient-to-r from-[#6242fc] to-[#8c52ff] text-white shadow-md' 
+            className={`flex-1 py-2 text-xs font-bold rounded-xl transition-all ${isLogin
+                ? 'bg-gradient-to-r from-[#6242fc] to-[#8c52ff] text-white shadow-md'
                 : 'text-slate-400 hover:text-white'
-            }`}
+              }`}
           >
             Masuk Akun
           </button>
           <button
             onClick={() => setIsLogin(false)}
-            className={`flex-1 py-2 text-xs font-bold rounded-xl transition-all ${
-              !isLogin 
-                ? 'bg-gradient-to-r from-[#6242fc] to-[#8c52ff] text-white shadow-md' 
+            className={`flex-1 py-2 text-xs font-bold rounded-xl transition-all ${!isLogin
+                ? 'bg-gradient-to-r from-[#6242fc] to-[#8c52ff] text-white shadow-md'
                 : 'text-slate-400 hover:text-white'
-            }`}
+              }`}
           >
             Daftar Baru
           </button>
         </div>
 
         <h3 className="text-xl font-black text-white mb-1">
-          {isLogin ? 'Masuk ke YUMASHOP' : 'Daftar Akun YUMASHOP'}
+          {isLogin ? 'Masuk ke YUMATOPUP' : 'Daftar Akun YUMATOPUP'}
         </h3>
         <p className="text-xs text-slate-400 mb-5">
-          {isLogin 
-            ? 'Nikmati kemudahan riwayat transaksi dan poin cashback YumaRewards.' 
+          {isLogin
+            ? 'Nikmati kemudahan riwayat transaksi dan poin cashback YumaRewards.'
             : 'Daftar sekarang dan dapatkan voucher diskon 10% untuk transaksi pertama.'}
         </p>
 
@@ -120,7 +118,7 @@ export default function AuthModal({ isOpen, onClose, onShowSuccess }) {
             </button>
 
             <div className="pt-2 text-center text-[11px] text-slate-400">
-              Dengan melanjutkan, Anda menyetujui <a href="#" className="text-purple-300 underline">Syarat & Ketentuan</a> dan <a href="#" className="text-purple-300 underline">Kebijakan Privasi</a> YUMASHOP.
+              Dengan melanjutkan, Anda menyetujui <a href="#" className="text-purple-300 underline">Syarat & Ketentuan</a> dan <a href="#" className="text-purple-300 underline">Kebijakan Privasi</a> YUMATOPUP.
             </div>
           </form>
         )}
