@@ -2,12 +2,12 @@ import React from 'react';
 
 export default function YumaShopLogo({ className = "h-9 w-auto", showTagline = true }) {
   return (
-    <div className={`inline-flex items-center gap-3 select-none ${className}`}>
+    <div className={`inline-flex items-center gap-2 sm:gap-3 select-none ${className}`}>
       {/* Official YUMA TOPUP Emblem - Direct without box/frame */}
       <img 
         src="/yuma-logo-128.png" 
         alt="Yuma Topup" 
-        className="h-9 sm:h-10 w-auto object-contain hover:scale-105 transition-transform drop-shadow-md"
+        className="h-8 sm:h-10 w-auto object-contain hover:scale-105 transition-transform drop-shadow-md"
         onError={(e) => {
           e.currentTarget.onerror = null;
           e.currentTarget.src = "/yuma-topup.png";
@@ -16,7 +16,7 @@ export default function YumaShopLogo({ className = "h-9 w-auto", showTagline = t
 
       {/* Brand Typography: Esports Style */}
       <div className="flex flex-col text-left">
-        <div className="flex items-center tracking-tight leading-none font-black text-2xl sm:text-[25px]">
+        <div className="flex items-center tracking-tight leading-none font-black text-xl sm:text-[25px]">
           <span className="text-white drop-shadow-sm font-black tracking-[-0.04em]">
             YUMA
           </span>
@@ -26,9 +26,9 @@ export default function YumaShopLogo({ className = "h-9 w-auto", showTagline = t
         </div>
 
         {showTagline && (
-          <div className="flex items-center gap-1.5 mt-0.5">
-            <span className="h-[2px] w-2.5 bg-[#ff4655] rounded-full" />
-            <span className="text-[9px] uppercase tracking-[0.2em] font-extrabold text-slate-400 leading-none">
+          <div className="flex items-center gap-1 sm:gap-1.5 mt-0.5">
+            <span className="h-[2px] w-2 sm:w-2.5 bg-[#ff4655] rounded-full" />
+            <span className="text-[8px] sm:text-[9px] uppercase tracking-[0.16em] sm:tracking-[0.2em] font-extrabold text-slate-400 leading-none">
               Top Up Games &bull; Indonesia
             </span>
           </div>

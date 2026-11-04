@@ -27,8 +27,8 @@ const FEATURES = [
     icon: Headphones,
     title: "Layanan Pelanggan Cepat & Ramah",
     description: "Tim support kami siap membantu Anda 24 jam setiap hari melalui Live Chat & WhatsApp untuk menangani segala pertanyaan.",
-    color: "from-purple-400 to-pink-500",
-    bgIcon: "bg-purple-500/10 text-purple-400 border-purple-500/20"
+    color: "from-[#ff4655] to-[#ff7a00]",
+    bgIcon: "bg-red-500/10 text-[#ff4655] border-red-500/20"
   },
   {
     icon: Gift,
@@ -48,33 +48,33 @@ const FEATURES = [
 
 export default function FeaturesSection() {
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="text-center max-w-2xl mx-auto mb-10">
-        <h2 className="text-xl sm:text-3xl font-black text-white tracking-tight">
+    <section className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-8 sm:py-12">
+      <div className="text-center max-w-2xl mx-auto mb-6 sm:mb-10">
+        <h2 className="text-lg sm:text-3xl font-black text-white tracking-tight">
           Website Top-Up Terbesar, Tercepat & Terpercaya di Indonesia
         </h2>
-        <p className="text-xs sm:text-sm text-slate-400 mt-2">
+        <p className="text-[11px] sm:text-sm text-slate-400 mt-1.5 sm:mt-2">
           Jutaan gamers Indonesia mempercayakan kebutuhan voucher dan top-up game mereka kepada YUMATOPUP setiap hari.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-5">
         {FEATURES.map((item, idx) => {
           const Icon = item.icon;
           return (
             <div
               key={idx}
-              className="p-6 rounded-3xl bg-[#11141d] border border-[#1e2436] hover:border-[#ff4655]/60 transition-all duration-300 text-left hover:-translate-y-1 shadow-lg hover:shadow-red-950/20 group"
+              className="p-4 sm:p-6 rounded-2xl sm:rounded-3xl bg-[#11141d] border border-[#1e2436] hover:border-[#ff4655]/60 transition-all duration-300 text-left hover:-translate-y-1 shadow-lg hover:shadow-red-950/20 group"
             >
-              <div className={`w-12 h-12 rounded-2xl border flex items-center justify-center mb-4 ${item.bgIcon} group-hover:scale-110 transition-transform`}>
-                <Icon className="w-6 h-6 stroke-[2.2]" />
+              <div className={`w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl border flex items-center justify-center mb-3 sm:mb-4 ${item.bgIcon} group-hover:scale-110 transition-transform`}>
+                <Icon className="w-5 h-5 sm:w-6 sm:h-6 stroke-[2.2]" />
               </div>
 
-              <h3 className="font-bold text-base text-white group-hover:text-amber-300 transition-colors mb-2">
+              <h3 className="font-bold text-sm sm:text-base text-white group-hover:text-amber-300 transition-colors mb-1.5 sm:mb-2">
                 {item.title}
               </h3>
 
-              <p className="text-xs text-slate-300 leading-relaxed">
+              <p className="text-[11px] sm:text-xs text-slate-300 leading-relaxed">
                 {item.description}
               </p>
             </div>
@@ -84,4 +84,3 @@ export default function FeaturesSection() {
     </section>
   );
 }
-

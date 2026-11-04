@@ -35,9 +35,10 @@ export default function CheckoutModal({ order, onClose }) {
     maximumFractionDigits: 0
   }).format(num);
 
-  // Generate order reference
-  const orderId = `YUMA-${Date.now().toString().slice(-8)}`;
-  const virtualAccountNo = `8809${Math.floor(1000000000 + Math.random() * 9000000000)}`;
+  // Generate stable order reference via lazy state initialization
+  const [orderId] = useState(() => `YUMA-${Date.now().toString().slice(-8)}`);
+  const [virtualAccountNo] = useState(() => `8809${Math.floor(1000000000 + Math.random() * 9000000000)}`);
+  const [orderDate] = useState(() => new Date().toLocaleString('id-ID'));
 
   const handleCopy = (text) => {
     navigator.clipboard?.writeText(text);
@@ -54,7 +55,7 @@ export default function CheckoutModal({ order, onClose }) {
         spread: 70,
         origin: { y: 0.6 }
       });
-    } catch (e) {
+    } catch {
       // fallback
     }
   };
@@ -67,8 +68,8 @@ export default function CheckoutModal({ order, onClose }) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md overflow-y-auto">
-      <div className="relative w-full max-w-lg bg-[#0e1118] border border-[#1e2538] rounded-3xl shadow-2xl p-6 sm:p-7 text-left my-8">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/85 backdrop-blur-md overflow-y-auto">
+      <div className="relative w-full max-w-lg bg-[#0e1118] border border-[#1e2538] rounded-2xl sm:rounded-3xl shadow-2xl p-4 sm:p-7 text-left my-3 sm:my-8 max-h-[92vh] overflow-y-auto">
         
         {/* Close Button */}
         <button
@@ -269,7 +270,7 @@ export default function CheckoutModal({ order, onClose }) {
               </div>
               <div className="flex justify-between text-slate-300">
                 <span>Tanggal & Waktu</span>
-                <span>{new Date().toLocaleString('id-ID')}</span>
+                <span>{orderDate}</span>
               </div>
               <div className="flex justify-between items-center text-slate-300">
                 <span>Metode Pembayaran</span>

@@ -138,24 +138,24 @@ export default function App() {
             />
 
             {/* Game Catalog Grid Section */}
-            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <section className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-5 sm:py-6">
 
-              <div className="flex items-center justify-between mb-5">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2.5 sm:gap-3 mb-4 sm:mb-5">
                 <div className="flex items-center gap-2.5">
-                  <div className="w-8 h-8 rounded-xl bg-red-500/15 text-[#ff4655] border border-red-500/25 flex items-center justify-center">
-                    <Flame className="w-4 h-4 fill-[#ff4655]" />
+                  <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-red-500/15 text-[#ff4655] border border-red-500/25 flex items-center justify-center flex-shrink-0">
+                    <Flame className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-[#ff4655]" />
                   </div>
                   <div>
-                    <h2 className="text-lg sm:text-xl font-black text-white text-left tracking-tight">
+                    <h2 className="text-base sm:text-xl font-black text-white text-left tracking-tight">
                       Pilihan Game & Voucher Terpopuler
                     </h2>
-                    <p className="text-xs text-slate-400 text-left">
+                    <p className="text-[10px] sm:text-xs text-slate-400 text-left">
                       Pilih game favoritmu dari katalog {GAMES.length} produk resmi YUMATOPUP
                     </p>
                   </div>
                 </div>
 
-                <div className="text-xs text-slate-300 font-bold bg-[#11141d] px-3.5 py-1.5 rounded-full border border-[#1e2436]">
+                <div className="text-[10px] sm:text-xs text-slate-300 font-bold bg-[#11141d] px-2.5 py-1 sm:px-3.5 sm:py-1.5 rounded-full border border-[#1e2436] flex-shrink-0">
                   {filteredGames.length} Game Tersedia
                 </div>
               </div>
@@ -163,7 +163,7 @@ export default function App() {
               {/* Product Cards Grid */}
               {filteredGames.length > 0 ? (
                 <div>
-                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2.5 sm:gap-4">
                     {displayedGames.map((game) => (
                       <ProductCard
                         key={game.id}
@@ -180,11 +180,11 @@ export default function App() {
 
                   {/* Load More Button */}
                   {hasMore && (
-                    <div className="mt-8 text-center">
+                    <div className="mt-6 sm:mt-8 text-center px-2">
                       <button
                         onClick={handleLoadMore}
                         disabled={isLoadingMore}
-                        className="inline-flex items-center gap-2 px-8 py-3 rounded-xl bg-[#11141d] hover:bg-[#181d2a] text-slate-200 hover:text-white border border-[#1e2436] hover:border-[#ff4655]/60 text-xs sm:text-sm font-bold shadow-lg transition-all transform hover:-translate-y-0.5 cursor-pointer"
+                        className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 rounded-xl bg-[#11141d] hover:bg-[#181d2a] text-slate-200 hover:text-white border border-[#1e2436] hover:border-[#ff4655]/60 text-xs sm:text-sm font-bold shadow-lg transition-all transform hover:-translate-y-0.5 active:scale-98 cursor-pointer"
                       >
                         {isLoadingMore ? (
                           <>
@@ -193,7 +193,7 @@ export default function App() {
                           </>
                         ) : (
                           <>
-                            <span>Tampilkan Lebih Banyak Game ({filteredGames.length - visibleCount} tersisa)</span>
+                            <span>Tampilkan Lebih Banyak ({filteredGames.length - visibleCount} tersisa)</span>
                             <ChevronDown className="w-4 h-4 text-[#ff4655]" />
                           </>
                         )}

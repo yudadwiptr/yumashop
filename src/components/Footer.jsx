@@ -23,14 +23,14 @@ const DAYJHO_PAYMENT_LOGOS = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#07080c] border-t border-[#181d2a] text-left pt-12 pb-16">
+    <footer className="bg-[#07080c] border-t border-[#181d2a] text-left pt-10 sm:pt-12 pb-14 sm:pb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main Footer Links & Info */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-10 border-b border-[#181d2a]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 pb-8 sm:pb-10 border-b border-[#181d2a]">
           
           {/* Brand Column */}
-          <div className="lg:col-span-2 space-y-4">
+          <div className="lg:col-span-2 space-y-3 sm:space-y-4">
             <YumaShopLogo />
 
             <p className="text-xs text-slate-400 leading-relaxed max-w-sm">
@@ -38,15 +38,15 @@ export default function Footer() {
             </p>
 
             <div className="flex items-center gap-2 text-xs text-slate-300">
-              <ShieldCheck className="w-4 h-4 text-emerald-400" />
+              <ShieldCheck className="w-4 h-4 text-emerald-400 flex-shrink-0" />
               <span>Mitra Resmi Publisher Game Indonesia</span>
             </div>
           </div>
 
           {/* Nav Column 1 */}
           <div>
-            <h4 className="text-sm font-bold text-white mb-3">Tentang YUMATOPUP</h4>
-            <ul className="space-y-2 text-xs text-slate-400">
+            <h4 className="text-xs sm:text-sm font-bold text-white mb-2.5 sm:mb-3">Tentang YUMATOPUP</h4>
+            <ul className="space-y-1.5 sm:space-y-2 text-xs text-slate-400">
               <li><a href="#" className="hover:text-[#ff4655] transition-colors">Tentang Kami</a></li>
               <li><a href="#" className="hover:text-[#ff4655] transition-colors">Karir & Peluang</a></li>
               <li><a href="#" className="hover:text-[#ff4655] transition-colors">Program Kemitraan (Affiliate)</a></li>
@@ -57,8 +57,8 @@ export default function Footer() {
 
           {/* Nav Column 2 */}
           <div>
-            <h4 className="text-sm font-bold text-white mb-3">Bantuan & Dukungan</h4>
-            <ul className="space-y-2 text-xs text-slate-400">
+            <h4 className="text-xs sm:text-sm font-bold text-white mb-2.5 sm:mb-3">Bantuan & Dukungan</h4>
+            <ul className="space-y-1.5 sm:space-y-2 text-xs text-slate-400">
               <li><a href="#" className="hover:text-[#ff4655] transition-colors">Pusat Bantuan</a></li>
               <li><a href="#" className="hover:text-[#ff4655] transition-colors">Hubungi Customer Service</a></li>
               <li><a href="#" className="hover:text-[#ff4655] transition-colors">Panduan Pembayaran</a></li>
@@ -69,8 +69,8 @@ export default function Footer() {
 
           {/* Nav Column 3 */}
           <div>
-            <h4 className="text-sm font-bold text-white mb-3">Legal & Keamanan</h4>
-            <ul className="space-y-2 text-xs text-slate-400">
+            <h4 className="text-xs sm:text-sm font-bold text-white mb-2.5 sm:mb-3">Legal & Keamanan</h4>
+            <ul className="space-y-1.5 sm:space-y-2 text-xs text-slate-400">
               <li><a href="#" className="hover:text-[#ff4655] transition-colors">Syarat & Ketentuan</a></li>
               <li><a href="#" className="hover:text-[#ff4655] transition-colors">Kebijakan Privasi</a></li>
               <li><a href="#" className="hover:text-[#ff4655] transition-colors">Pemberitahuan Hak Cipta</a></li>
@@ -81,22 +81,22 @@ export default function Footer() {
 
         </div>
 
-        {/* Supported Payment Logos using Dayjhostore assets */}
-        <div className="py-8 border-b border-[#181d2a]">
-          <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">
+        {/* Supported Payment Logos */}
+        <div className="py-6 sm:py-8 border-b border-[#181d2a]">
+          <div className="text-[11px] sm:text-xs font-bold text-slate-400 uppercase tracking-wider mb-3 sm:mb-4">
             Metode Pembayaran Resmi yang Didukung di Indonesia
           </div>
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3">
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-2 sm:gap-3">
             {DAYJHO_PAYMENT_LOGOS.map((pay) => (
               <div 
                 key={pay.name} 
-                className="h-12 bg-white rounded-xl p-2 flex items-center justify-center shadow-md hover:scale-105 transition-transform"
+                className="h-10 sm:h-12 bg-white rounded-lg sm:rounded-xl p-1.5 sm:p-2 flex items-center justify-center shadow-md hover:scale-105 transition-transform"
                 title={pay.name}
               >
                 <img 
                   src={pay.image} 
                   alt={pay.name} 
-                  className="max-h-7 max-w-[85px] object-contain"
+                  className="max-h-5 sm:max-h-7 max-w-[70px] sm:max-w-[85px] object-contain"
                 />
               </div>
             ))}
@@ -104,22 +104,22 @@ export default function Footer() {
         </div>
 
         {/* Bottom Copyright & Disclaimer */}
-        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>
+        <div className="pt-6 sm:pt-8 flex flex-col md:flex-row items-center justify-between gap-3 sm:gap-4 text-xs text-slate-500">
+          <p className="text-center md:text-left">
             &copy; 2026 PT Yuma Digital Solusindo (YUMATOPUP Indonesia - yumatopup.com). Seluruh hak cipta dilindungi undang-undang.
           </p>
-          <p className="text-[11px] max-w-xl text-center md:text-right">
+          <p className="text-[10px] sm:text-[11px] max-w-xl text-center md:text-right text-slate-500">
             Seluruh nama dagang, logo game, dan karya seni yang ditampilkan adalah hak milik dari masing-masing penerbit (publisher) game.
           </p>
         </div>
 
         {/* Built by YUMA STUDIO Attribution */}
-        <div className="mt-8 pt-6 border-t border-[#141824] flex items-center justify-center">
+        <div className="mt-6 sm:mt-8 pt-5 sm:pt-6 border-t border-[#141824] flex items-center justify-center">
           <a
             href="https://yumastudio.digital/"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#0d1017] hover:bg-[#131722] border border-[#1a2030] hover:border-[#ff4655]/40 transition-all text-xs text-slate-400 hover:text-white shadow-sm"
+            className="group inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-xl bg-[#0d1017] hover:bg-[#131722] border border-[#1a2030] hover:border-[#ff4655]/40 transition-all text-xs text-slate-400 hover:text-white shadow-sm"
             title="Kunjungi Yuma Studio Digital"
           >
             <span className="text-slate-400 font-medium">Build by</span>

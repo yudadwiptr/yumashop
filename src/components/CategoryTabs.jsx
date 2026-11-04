@@ -20,8 +20,8 @@ const iconMap = {
 
 export default function CategoryTabs({ activeCategory, onSelectCategory }) {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-2">
-      {/* Compact Esports Grid - Fits completely without horizontal scroll! */}
+    <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 pt-3 pb-2">
+      {/* Compact Esports Grid - Fits cleanly on mobile without horizontal scroll */}
       <div className="grid grid-cols-3 sm:grid-cols-6 gap-1.5 sm:gap-2">
         {CATEGORIES.map((cat) => {
           const IconComponent = iconMap[cat.icon] || Gamepad2;
@@ -31,7 +31,7 @@ export default function CategoryTabs({ activeCategory, onSelectCategory }) {
             <button
               key={cat.id}
               onClick={() => onSelectCategory(cat.id)}
-              className={`group relative flex items-center justify-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-2 sm:py-2.5 rounded-xl transition-all duration-200 select-none cursor-pointer ${
+              className={`group relative flex items-center justify-center gap-1 sm:gap-2 px-1.5 sm:px-3 py-2 sm:py-2.5 rounded-xl transition-all duration-200 select-none cursor-pointer ${
                 isActive
                   ? 'bg-gradient-to-r from-[#ff4655] via-[#ff5400] to-[#ff6b00] text-white shadow-lg shadow-red-500/25 border-t border-t-white/30 border-b border-b-black/30 scale-[1.02]'
                   : 'bg-[#11141d] hover:bg-[#181d2a] text-slate-300 hover:text-white border border-[#1e2436] hover:border-[#ff4655]/60 hover:shadow-md'
@@ -43,7 +43,7 @@ export default function CategoryTabs({ activeCategory, onSelectCategory }) {
                 }`} 
               />
               
-              <span className={`text-[11px] sm:text-xs md:text-sm font-extrabold tracking-tight truncate leading-tight ${
+              <span className={`text-[10px] sm:text-xs md:text-sm font-extrabold tracking-tight truncate leading-tight ${
                 isActive ? 'text-white drop-shadow-sm' : 'text-slate-200 group-hover:text-white'
               }`}>
                 {cat.name}
