@@ -113,6 +113,27 @@ export default function Footer() {
           </p>
         </div>
 
+        {/* Built by YUMA STUDIO Attribution */}
+        <div className="mt-8 pt-6 border-t border-[#141824] flex items-center justify-center">
+          <a
+            href="https://yumastudio.digital/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#0d1017] hover:bg-[#131722] border border-[#1a2030] hover:border-[#ff4655]/40 transition-all text-xs text-slate-400 hover:text-white shadow-sm"
+            title="Kunjungi Yuma Studio Digital"
+          >
+            <span className="text-slate-400 font-medium">Build by</span>
+            <img 
+              src="/yuma-logo-white.svg" 
+              alt="Yuma Studio Logo" 
+              className="h-4 sm:h-4.5 w-auto object-contain opacity-90 group-hover:opacity-100 transition-opacity" 
+            />
+            <span className="font-extrabold tracking-wider text-white group-hover:text-[#ff4655] transition-colors">
+              YUMA STUDIO
+            </span>
+          </a>
+        </div>
+
       </div>
     </footer>
   );
