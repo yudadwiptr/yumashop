@@ -24,23 +24,23 @@ export default function HeroBanner({ onSelectGameById }) {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-2">
-      <div className="relative rounded-3xl overflow-hidden border border-[#3b3062] shadow-2xl bg-gradient-to-r from-[#17112e] via-[#1e153d] to-[#27194f] group min-h-[220px] sm:min-h-[290px] md:min-h-[340px] flex items-center">
+      <div className="relative rounded-3xl overflow-hidden border border-[#202738] shadow-2xl bg-gradient-to-r from-[#0d0f15] via-[#121622] to-[#181d2a] group min-h-[220px] sm:min-h-[290px] md:min-h-[340px] flex items-center">
         
         {/* Background Image & Ambient Glow */}
         <div className="absolute inset-0 z-0">
           <img 
             src={banner.image} 
             alt={banner.title} 
-            className="w-full h-full object-cover object-center opacity-35 mix-blend-luminosity scale-105 group-hover:scale-100 transition-transform duration-700"
+            className="w-full h-full object-cover object-center opacity-30 mix-blend-luminosity scale-105 group-hover:scale-100 transition-transform duration-700"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0e091d] via-[#150f2e]/80 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0e091d] via-[#120c26]/90 to-transparent w-full md:w-3/4" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#08090d] via-[#0d0f15]/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#08090d] via-[#0d0f15]/90 to-transparent w-full md:w-3/4" />
         </div>
 
         {/* Content Overlay */}
         <div className="relative z-10 p-6 sm:p-10 md:p-12 max-w-2xl text-left">
           
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-to-r from-purple-500/30 to-pink-500/30 border border-purple-400/40 text-purple-300 text-xs font-bold tracking-wider uppercase mb-3 sm:mb-4 shadow-sm backdrop-blur-md">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-500/20 border border-red-500/40 text-[#ff4655] text-xs font-bold tracking-wider uppercase mb-3 sm:mb-4 shadow-sm backdrop-blur-md">
             <Sparkles className="w-3.5 h-3.5 text-amber-300" />
             <span>{banner.tag}</span>
           </div>
@@ -56,14 +56,14 @@ export default function HeroBanner({ onSelectGameById }) {
           <div className="flex items-center gap-3">
             <button
               onClick={() => onSelectGameById(banner.gameId)}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm sm:text-base font-bold text-white bg-gradient-to-r from-[#ff5e3a] via-[#f73859] to-[#6242fc] hover:brightness-110 shadow-lg shadow-orange-600/30 transition-all transform hover:-translate-y-0.5 active:translate-y-0"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm sm:text-base font-bold text-white bg-gradient-to-r from-[#ff4655] via-[#ff5400] to-[#ff7a00] hover:brightness-110 shadow-lg shadow-red-500/25 transition-all transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
             >
               <span>{banner.cta}</span>
               <ArrowRight className="w-4 h-4" />
             </button>
             <button
               onClick={() => onSelectGameById(banner.gameId)}
-              className="hidden sm:inline-flex items-center gap-2 px-5 py-3 rounded-full text-sm font-semibold text-slate-200 bg-[#281f4a]/70 hover:bg-[#342962] border border-[#43376f] transition-all backdrop-blur-md"
+              className="hidden sm:inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold text-slate-200 bg-[#161a25]/85 hover:bg-[#1f2535] border border-[#273044] hover:border-[#ff4655]/50 transition-all backdrop-blur-md cursor-pointer"
             >
               Lihat Detail Promo
             </button>
@@ -74,7 +74,7 @@ export default function HeroBanner({ onSelectGameById }) {
         {/* Left / Right Carousel Controls */}
         <button
           onClick={handlePrev}
-          className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-[#181232]/80 hover:bg-[#6242fc] text-slate-300 hover:text-white border border-[#44386e] flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 shadow-lg backdrop-blur-md"
+          className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-[#11141d]/85 hover:bg-[#ff4655] text-slate-300 hover:text-white border border-[#273044] flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 shadow-lg backdrop-blur-md cursor-pointer"
           aria-label="Previous banner"
         >
           <ChevronLeft className="w-5 h-5" />
@@ -82,7 +82,7 @@ export default function HeroBanner({ onSelectGameById }) {
 
         <button
           onClick={handleNext}
-          className="absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-[#181232]/80 hover:bg-[#6242fc] text-slate-300 hover:text-white border border-[#44386e] flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 shadow-lg backdrop-blur-md"
+          className="absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-[#11141d]/85 hover:bg-[#ff4655] text-slate-300 hover:text-white border border-[#273044] flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 shadow-lg backdrop-blur-md cursor-pointer"
           aria-label="Next banner"
         >
           <ChevronRight className="w-5 h-5" />
@@ -94,9 +94,9 @@ export default function HeroBanner({ onSelectGameById }) {
             <button
               key={idx}
               onClick={() => setCurrentSlide(idx)}
-              className={`h-2 rounded-full transition-all duration-300 ${
+              className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
                 currentSlide === idx 
-                  ? 'w-7 bg-gradient-to-r from-[#ff5e3a] to-[#6242fc]' 
+                  ? 'w-7 bg-gradient-to-r from-[#ff4655] to-[#ff7a00]' 
                   : 'w-2 bg-slate-600 hover:bg-slate-400'
               }`}
               aria-label={`Slide ${idx + 1}`}
@@ -108,4 +108,3 @@ export default function HeroBanner({ onSelectGameById }) {
     </div>
   );
 }
-

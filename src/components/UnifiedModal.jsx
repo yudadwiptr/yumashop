@@ -37,8 +37,8 @@ export default function UnifiedModal({ isOpen, onClose, config }) {
     },
     info: {
       Icon: Info,
-      color: 'text-purple-400',
-      badgeBg: 'bg-purple-500/20 text-purple-300 border-purple-500/30',
+      color: 'text-[#ff4655]',
+      badgeBg: 'bg-purple-500/20 text-[#ff4655] border-purple-500/30',
       badgeText: 'Informasi YUMATOPUP',
       buttonBg: 'bg-gradient-to-r from-[#6b3bfc] to-[#ff5e3a]'
     }

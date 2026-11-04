@@ -170,7 +170,7 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
         <div className="flex items-center gap-3 mb-6 text-sm">
           <button
             onClick={onBack}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#1d163a] hover:bg-[#281f4f] text-slate-300 hover:text-white border border-[#372b5c] transition-colors cursor-pointer"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#1d163a] hover:bg-[#1a2030] text-slate-300 hover:text-white border border-[#372b5c] transition-colors cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Kembali</span>
@@ -185,14 +185,14 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
 
           {/* Left Column: Game Info & Instructions */}
           <div className="lg:col-span-4 space-y-6">
-            <div className="bg-[#1b1437] border border-[#362b5d] rounded-3xl p-6 shadow-xl sticky top-24">
+            <div className="bg-[#11141d] border border-[#1e2436] rounded-3xl p-6 shadow-xl sticky top-24">
 
               {/* Game Header */}
               <div className="flex items-center gap-4 mb-4">
                 <img
                   src={game.thumbnail}
                   alt={game.name}
-                  className="w-20 h-20 rounded-2xl object-cover border-2 border-[#54438b] shadow-lg shadow-purple-950/50 flex-shrink-0"
+                  className="w-20 h-20 rounded-2xl object-cover border-2 border-[#222a3d] shadow-lg shadow-black/50 flex-shrink-0"
                 />
                 <div>
                   <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-[10px] font-bold mb-1">
@@ -209,7 +209,7 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
               </div>
 
               {/* Rating & Speed Indicators */}
-              <div className="grid grid-cols-2 gap-2 py-3 border-y border-[#2d2250] text-center my-4">
+              <div className="grid grid-cols-2 gap-2 py-3 border-y border-[#1c2232] text-center my-4">
                 <div className="flex flex-col items-center">
                   <div className="flex items-center gap-1 text-amber-300 font-bold text-sm">
                     <Star className="w-3.5 h-3.5 fill-amber-300" />
@@ -217,7 +217,7 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
                   </div>
                   <span className="text-[10px] text-slate-400">{game.reviewsCount} Ulasan</span>
                 </div>
-                <div className="flex flex-col items-center border-l border-[#2d2250]">
+                <div className="flex flex-col items-center border-l border-[#1c2232]">
                   <div className="flex items-center gap-1 text-emerald-400 font-bold text-sm">
                     <Zap className="w-3.5 h-3.5 fill-emerald-400" />
                     <span>1-3 Detik</span>
@@ -232,7 +232,7 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
               </p>
 
               {/* Safety badge */}
-              <div className="mt-4 p-3 rounded-2xl bg-[#231b46] border border-[#3b2f65] flex items-start gap-2.5 text-xs text-slate-300">
+              <div className="mt-4 p-3 rounded-2xl bg-[#141824] border border-[#3b2f65] flex items-start gap-2.5 text-xs text-slate-300">
                 <ShieldCheck className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
                 <div>
                   <span className="font-bold text-white block">Jaminan Tanpa Login Akun</span>
@@ -247,10 +247,10 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
           <div className="lg:col-span-8 space-y-6 text-left">
 
             {/* ================= STEP 1: USER ID ================= */}
-            <div className="bg-[#1b1437] border border-[#362b5d] rounded-3xl p-6 sm:p-7 shadow-xl">
+            <div className="bg-[#11141d] border border-[#1e2436] rounded-3xl p-6 sm:p-7 shadow-xl">
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-[#6242fc] to-[#f54291] text-white font-black text-sm flex items-center justify-center shadow-md">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-[#ff4655] to-[#ff7a00] text-white font-black text-sm flex items-center justify-center shadow-md">
                     1
                   </div>
                   <h2 className="text-base sm:text-lg font-bold text-white">
@@ -260,7 +260,7 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
                 <button
                   type="button"
                   onClick={() => setShowIdHelp(!showIdHelp)}
-                  className="inline-flex items-center gap-1 text-xs text-purple-300 hover:text-white transition-colors cursor-pointer"
+                  className="inline-flex items-center gap-1 text-xs text-[#ff4655] hover:text-white transition-colors cursor-pointer"
                 >
                   <HelpCircle className="w-3.5 h-3.5" />
                   <span>Petunjuk ID</span>
@@ -289,7 +289,7 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
                     placeholder={game.inputPlaceholder || "Masukkan ID"}
                     value={userId}
                     onChange={(e) => setUserId(e.target.value)}
-                    className="w-full px-4 py-3 rounded-xl bg-[#241b46] text-white border border-[#3c2f68] focus:outline-none focus:border-[#7c4df7] focus:ring-2 focus:ring-[#7c4df7]/30 text-sm font-medium transition-all"
+                    className="w-full px-4 py-3 rounded-xl bg-[#141824] text-white border border-[#1e2638] focus:outline-none focus:border-[#ff4655] focus:ring-2 focus:ring-[#ff4655]/20 text-sm font-medium transition-all"
                   />
                 </div>
 
@@ -302,10 +302,10 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
                       <select
                         value={zoneId}
                         onChange={(e) => setZoneId(e.target.value)}
-                        className="w-full px-4 py-3 rounded-xl bg-[#241b46] text-white border border-[#3c2f68] focus:outline-none focus:border-[#7c4df7] text-sm font-medium transition-all"
+                        className="w-full px-4 py-3 rounded-xl bg-[#141824] text-white border border-[#1e2638] focus:outline-none focus:border-[#ff4655] text-sm font-medium transition-all"
                       >
                         {game.serverOptions.map(srv => (
-                          <option key={srv} value={srv} className="bg-[#1b1437]">Server {srv}</option>
+                          <option key={srv} value={srv} className="bg-[#11141d]">Server {srv}</option>
                         ))}
                       </select>
                     ) : (
@@ -314,7 +314,7 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
                         placeholder={game.zonePlaceholder || "Zone ID"}
                         value={zoneId}
                         onChange={(e) => setZoneId(e.target.value)}
-                        className="w-full px-4 py-3 rounded-xl bg-[#241b46] text-white border border-[#3c2f68] focus:outline-none focus:border-[#7c4df7] text-sm font-medium transition-all"
+                        className="w-full px-4 py-3 rounded-xl bg-[#141824] text-white border border-[#1e2638] focus:outline-none focus:border-[#ff4655] text-sm font-medium transition-all"
                       />
                     )}
                   </div>
@@ -327,10 +327,10 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
             </div>
 
             {/* ================= STEP 2: NOMINAL / DENOMINATIONS ================= */}
-            <div className="bg-[#1b1437] border border-[#362b5d] rounded-3xl p-6 sm:p-7 shadow-xl">
+            <div className="bg-[#11141d] border border-[#1e2436] rounded-3xl p-6 sm:p-7 shadow-xl">
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-[#6242fc] to-[#f54291] text-white font-black text-sm flex items-center justify-center shadow-md">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-[#ff4655] to-[#ff7a00] text-white font-black text-sm flex items-center justify-center shadow-md">
                     2
                   </div>
                   <h2 className="text-base sm:text-lg font-bold text-white">
@@ -347,8 +347,8 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
                     type="button"
                     onClick={() => setSelectedDenomCategory(cat)}
                     className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all flex-shrink-0 cursor-pointer ${selectedDenomCategory === cat
-                        ? 'bg-gradient-to-r from-[#6242fc] to-[#8c52ff] text-white border border-purple-400/40 shadow-sm'
-                        : 'bg-[#241b46] text-slate-300 hover:text-white border border-[#3a2f64]'
+                        ? 'bg-gradient-to-r from-[#ff4655] to-[#ff6b00] text-white border border-red-500/40 shadow-sm'
+                        : 'bg-[#141824] text-slate-300 hover:text-white border border-[#1e2638]'
                       }`}
                   >
                     {cat}
@@ -365,8 +365,8 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
                       key={denom.id}
                       onClick={() => setSelectedDenom(denom)}
                       className={`relative p-3.5 sm:p-4 rounded-2xl cursor-pointer transition-all duration-200 border text-left flex flex-col justify-between ${isSelected
-                          ? 'bg-gradient-to-b from-[#2a1d56] to-[#1e1540] border-[#7c4df7] ring-2 ring-[#7c4df7]/40 shadow-lg shadow-purple-950/40 -translate-y-0.5'
-                          : 'bg-[#221a42] hover:bg-[#281f4f] border-[#372b5f] hover:border-[#524089]'
+                          ? 'bg-gradient-to-b from-[#241219] to-[#141824] border-[#ff4655] ring-2 ring-[#ff4655]/30 shadow-lg shadow-red-950/30 -translate-y-0.5'
+                          : 'bg-[#141824] hover:bg-[#1a2030] border-[#1e2638] hover:border-[#524089]'
                         }`}
                     >
                       {/* Top Badges */}
@@ -384,7 +384,7 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
                         )}
 
                         {isSelected && (
-                          <div className="w-5 h-5 rounded-full bg-[#7c4df7] text-white flex items-center justify-center">
+                          <div className="w-5 h-5 rounded-full bg-[#ff4655] text-white flex items-center justify-center">
                             <Check className="w-3 h-3 stroke-[3]" />
                           </div>
                         )}
@@ -401,7 +401,7 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
                         )}
                       </div>
 
-                      <div className="mt-3 pt-2 border-t border-[#312556]">
+                      <div className="mt-3 pt-2 border-t border-[#1c2232]">
                         {denom.originalPrice && (
                           <span className="text-[11px] text-slate-500 line-through block -mb-0.5">
                             {formatIDR(denom.originalPrice)}
@@ -419,9 +419,9 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
             </div>
 
             {/* ================= STEP 3: PAYMENT METHOD (DAYJHOSTORE DESIGN) ================= */}
-            <div className="bg-[#1b1437] border border-[#362b5d] rounded-3xl p-6 sm:p-7 shadow-xl">
+            <div className="bg-[#11141d] border border-[#1e2436] rounded-3xl p-6 sm:p-7 shadow-xl">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-8 h-8 rounded-full bg-gradient-to-r from-[#6242fc] to-[#f54291] text-white font-black text-sm flex items-center justify-center shadow-md">
+                <div className="w-8 h-8 rounded-full bg-gradient-to-r from-[#ff4655] to-[#ff7a00] text-white font-black text-sm flex items-center justify-center shadow-md">
                   3
                 </div>
                 <div>
@@ -442,16 +442,16 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
                   return (
                     <div
                       key={group.group}
-                      className="rounded-2xl border border-[#372b60] bg-[#140e2b] overflow-hidden shadow-md"
+                      className="rounded-2xl border border-[#1e2638] bg-[#0c0e14] overflow-hidden shadow-md"
                     >
                       {/* Accordion Header */}
                       <button
                         type="button"
                         onClick={() => toggleAccordion(group.group)}
-                        className="w-full px-5 py-3.5 bg-[#211842] hover:bg-[#281d50] flex items-center justify-between text-left transition-colors cursor-pointer"
+                        className="w-full px-5 py-3.5 bg-[#141824] hover:bg-[#1b2132] flex items-center justify-between text-left transition-colors cursor-pointer"
                       >
                         <div className="flex items-center gap-2.5">
-                          <CreditCard className="w-4 h-4 text-purple-400" />
+                          <CreditCard className="w-4 h-4 text-[#ff4655]" />
                           <span className="font-extrabold text-sm text-white tracking-wide">
                             {group.group}
                           </span>
@@ -461,9 +461,9 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
                             {group.description}
                           </span>
                           {isOpen ? (
-                            <ChevronUp className="w-4 h-4 text-purple-400" />
+                            <ChevronUp className="w-4 h-4 text-[#ff4655]" />
                           ) : (
-                            <ChevronDown className="w-4 h-4 text-purple-400" />
+                            <ChevronDown className="w-4 h-4 text-[#ff4655]" />
                           )}
                         </div>
                       </button>
@@ -542,9 +542,9 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
             </div>
 
             {/* ================= STEP 4: CONTACT & CHECKOUT ================= */}
-            <div className="bg-[#1b1437] border border-[#362b5d] rounded-3xl p-6 sm:p-7 shadow-xl">
+            <div className="bg-[#11141d] border border-[#1e2436] rounded-3xl p-6 sm:p-7 shadow-xl">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-8 h-8 rounded-full bg-gradient-to-r from-[#6242fc] to-[#f54291] text-white font-black text-sm flex items-center justify-center shadow-md">
+                <div className="w-8 h-8 rounded-full bg-gradient-to-r from-[#ff4655] to-[#ff7a00] text-white font-black text-sm flex items-center justify-center shadow-md">
                   4
                 </div>
                 <div>
@@ -568,7 +568,7 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
                     placeholder="08123456789 atau email@domain.com"
                     value={contactInfo}
                     onChange={(e) => setContactInfo(e.target.value)}
-                    className="w-full px-4 py-3 rounded-xl bg-[#241b46] text-white border border-[#3c2f68] focus:outline-none focus:border-[#7c4df7] text-sm font-medium"
+                    className="w-full px-4 py-3 rounded-xl bg-[#141824] text-white border border-[#1e2638] focus:outline-none focus:border-[#ff4655] text-sm font-medium"
                   />
                 </div>
 
@@ -583,12 +583,12 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
                       placeholder="Contoh: YUMATOPUP atau YUMAHEMAT"
                       value={promoCode}
                       onChange={(e) => setPromoCode(e.target.value)}
-                      className="flex-1 px-4 py-2.5 rounded-xl bg-[#241b46] text-white border border-[#3c2f68] focus:outline-none focus:border-[#7c4df7] text-sm uppercase font-bold tracking-wider"
+                      className="flex-1 px-4 py-2.5 rounded-xl bg-[#141824] text-white border border-[#1e2638] focus:outline-none focus:border-[#ff4655] text-sm uppercase font-bold tracking-wider"
                     />
                     <button
                       type="button"
                       onClick={handleApplyPromo}
-                      className="px-5 py-2.5 rounded-xl bg-[#6242fc] hover:bg-[#7354fc] text-white text-xs font-bold transition-colors cursor-pointer"
+                      className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#ff4655] to-[#ff6b00] hover:brightness-110 text-white text-xs font-bold transition-colors cursor-pointer"
                     >
                       Terapkan
                     </button>
@@ -623,7 +623,7 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
                     id="remember"
                     checked={rememberMe}
                     onChange={(e) => setRememberMe(e.target.checked)}
-                    className="w-4 h-4 rounded bg-[#241b46] border-[#3c2f68] text-[#6242fc] focus:ring-0"
+                    className="w-4 h-4 rounded bg-[#141824] border-[#1e2638] text-[#ff4655] focus:ring-0"
                   />
                   <label htmlFor="remember" className="text-xs text-slate-300 cursor-pointer">
                     Ingat data ID saya untuk transaksi berikutnya di YUMATOPUP
@@ -632,10 +632,10 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
               </div>
 
               {/* Order Summary Box */}
-              <div className="p-4 sm:p-5 rounded-2xl bg-[#231a44] border border-[#392d63] space-y-2.5 mb-6 text-xs sm:text-sm">
-                <div className="font-bold text-white text-sm sm:text-base border-b border-[#312556] pb-2 flex items-center justify-between">
+              <div className="p-4 sm:p-5 rounded-2xl bg-[#141824] border border-[#1e2638] space-y-2.5 mb-6 text-xs sm:text-sm">
+                <div className="font-bold text-white text-sm sm:text-base border-b border-[#1c2232] pb-2 flex items-center justify-between">
                   <span>Ringkasan Pesanan</span>
-                  <span className="text-xs font-normal text-purple-300">YUMATOPUP Checkout</span>
+                  <span className="text-xs font-normal text-[#ff4655]">YUMATOPUP Checkout</span>
                 </div>
 
                 <div className="flex justify-between text-slate-300">
@@ -650,7 +650,7 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
 
                 <div className="flex justify-between text-slate-300">
                   <span>User ID Target</span>
-                  <span className="font-mono text-purple-300">{userId || '-'} {zoneId ? `(${zoneId})` : ''}</span>
+                  <span className="font-mono text-[#ff4655]">{userId || '-'} {zoneId ? `(${zoneId})` : ''}</span>
                 </div>
 
                 <div className="flex justify-between items-center text-slate-300">
@@ -688,7 +688,7 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
                   </div>
                 )}
 
-                <div className="pt-2 border-t border-[#312556] flex justify-between items-center text-sm sm:text-base font-black text-white">
+                <div className="pt-2 border-t border-[#1c2232] flex justify-between items-center text-sm sm:text-base font-black text-white">
                   <span>Total Pembayaran:</span>
                   <span className="text-lg sm:text-xl text-amber-400 font-extrabold">
                     {formatIDR(currentTotalPrice)}
@@ -700,7 +700,7 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
               <button
                 type="button"
                 onClick={handleFormSubmit}
-                className="w-full py-4 rounded-2xl font-black text-base sm:text-lg text-white bg-gradient-to-r from-[#ff5e3a] via-[#f73859] to-[#6242fc] hover:brightness-110 shadow-xl shadow-orange-600/30 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2 cursor-pointer"
+                className="w-full py-4 rounded-2xl font-black text-base sm:text-lg text-white bg-gradient-to-r from-[#ff4655] via-[#ff5400] to-[#ff7a00] hover:brightness-110 shadow-xl shadow-orange-600/30 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2 cursor-pointer"
               >
                 <Zap className="w-5 h-5 fill-white" />
                 <span>Beli Sekarang ({formatIDR(currentTotalPrice)})</span>
@@ -718,14 +718,14 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
         </div>
 
         {/* Sticky Mobile Buy Bar */}
-        <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#150f2e]/95 backdrop-blur-md border-t border-[#372b5f] p-3 px-4 flex items-center justify-between">
+        <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#0b0d13]/95 backdrop-blur-md border-t border-[#1e2638] p-3 px-4 flex items-center justify-between">
           <div>
             <span className="text-[10px] text-slate-400 block uppercase">Total Tagihan</span>
             <span className="text-base font-black text-amber-400">{formatIDR(currentTotalPrice)}</span>
           </div>
           <button
             onClick={handleFormSubmit}
-            className="px-6 py-2.5 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-[#ff5e3a] to-[#6242fc] shadow-lg shadow-purple-600/30 cursor-pointer"
+            className="px-6 py-2.5 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-[#ff4655] to-[#ff6b00] shadow-lg shadow-red-600/30 cursor-pointer"
           >
             Beli Sekarang
           </button>

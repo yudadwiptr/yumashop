@@ -1,13 +1,11 @@
-import React, { useRef } from 'react';
-import {
-  Gamepad2,
-  Flame,
-  Smartphone,
-  Monitor,
-  Ticket,
-  Tv,
-  ChevronLeft,
-  ChevronRight
+import React from 'react';
+import { 
+  Gamepad2, 
+  Flame, 
+  Smartphone, 
+  Monitor, 
+  Ticket, 
+  Tv 
 } from 'lucide-react';
 import { CATEGORIES } from '../data/mockData';
 
@@ -21,86 +19,49 @@ const iconMap = {
 };
 
 export default function CategoryTabs({ activeCategory, onSelectCategory }) {
-  const scrollRef = useRef(null);
-
-  const handleScroll = (direction) => {
-    if (scrollRef.current) {
-      const scrollAmount = direction === 'left' ? -260 : 260;
-      scrollRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-    }
-  };
-
   return (
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-2">
-            <div className="relative group/tabs">
-              {/* Left Scroll Arrow (Desktop) */}
-              <button
-                onClick={() => handleScroll('left')}
-                aria-label="Scroll Kiri"
-                className="hidden md:flex absolute -left-3 top-1/2 -translate-y-1/2 z-20 w-8 h-8 rounded-full bg-[#181133]/90 hover:bg-[#6242fc] text-slate-300 hover:text-white border border-[#3b2d68] shadow-lg items-center justify-center transition-all opacity-0 group-hover/tabs:opacity-100 hover:scale-110 cursor-pointer backdrop-blur-sm"
-              >
-                <ChevronLeft className="w-4 h-4" />
-              </button>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-2">
+      {/* Compact Esports Grid - Fits completely without horizontal scroll! */}
+      <div className="grid grid-cols-3 sm:grid-cols-6 gap-1.5 sm:gap-2">
+        {CATEGORIES.map((cat) => {
+          const IconComponent = iconMap[cat.icon] || Gamepad2;
+          const isActive = activeCategory === cat.id;
 
-              {/* Scrollable Container */}
-              <div
-                ref={scrollRef}
-                className="flex items-center gap-3 overflow-x-auto no-scrollbar scroll-smooth py-2 px-1"
-              >
-                {CATEGORIES.map((cat) => {
-                  const IconComponent = iconMap[cat.icon] || Gamepad2;
-                  const isActive = activeCategory === cat.id;
+          return (
+            <button
+              key={cat.id}
+              onClick={() => onSelectCategory(cat.id)}
+              className={`group relative flex items-center justify-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-2 sm:py-2.5 rounded-xl transition-all duration-200 select-none cursor-pointer ${
+                isActive
+                  ? 'bg-gradient-to-r from-[#ff4655] via-[#ff5400] to-[#ff6b00] text-white shadow-lg shadow-red-500/25 border-t border-t-white/30 border-b border-b-black/30 scale-[1.02]'
+                  : 'bg-[#11141d] hover:bg-[#181d2a] text-slate-300 hover:text-white border border-[#1e2436] hover:border-[#ff4655]/60 hover:shadow-md'
+              }`}
+            >
+              <IconComponent 
+                className={`w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0 transition-transform ${
+                  isActive ? 'text-white' : 'text-slate-400 group-hover:text-[#ff4655]'
+                }`} 
+              />
+              
+              <span className={`text-[11px] sm:text-xs md:text-sm font-extrabold tracking-tight truncate leading-tight ${
+                isActive ? 'text-white drop-shadow-sm' : 'text-slate-200 group-hover:text-white'
+              }`}>
+                {cat.name}
+              </span>
 
-                  return (
-                    <button
-                      key={cat.id}
-                      onClick={() => onSelectCategory(cat.id)}
-                      className={`group relative flex-shrink-0 flex items-center gap-3 px-4 py-2.5 sm:py-3 rounded-2xl transition-all duration-300 text-left select-none cursor-pointer ${isActive
-                          ? `bg-gradient-to-r ${cat.gradient} text-white ${cat.glow} shadow-xl scale-[1.02] border-t border-t-white/40 border-b border-b-black/30 border-x border-white/20`
-                          : 'bg-[#181133]/90 hover:bg-[#231846] text-slate-300 hover:text-white border border-[#312558] hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-950/40 hover:-translate-y-0.5'
-                        }`}
-                    >
-                      {/* Icon Container with glowing effect */}
-                      <div className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 ${isActive
-                          ? 'bg-white/20 text-white shadow-inner backdrop-blur-sm scale-105'
-                          : `${cat.iconBg} border group-hover:scale-110`
-                        }`}>
-                        <IconComponent className="w-5 h-5 transition-transform" />
-                      </div>
-
-                      {/* Text & Dynamic Subtitle/Badge */}
-                      <div className="flex flex-col pr-1">
-                        <span className={`text-xs sm:text-sm font-extrabold tracking-tight leading-tight ${isActive ? 'text-white drop-shadow-sm' : 'text-slate-200 group-hover:text-white'
-                          }`}>
-                          {cat.name}
-                        </span>
-
-                        <span className={`text-[10px] font-semibold mt-0.5 leading-none ${isActive
-                            ? 'text-white/85 font-bold'
-                            : 'text-slate-400 group-hover:text-purple-300'
-                          }`}>
-                          {cat.badge}
-                        </span>
-                      </div>
-
-                      {/* Active Indicator Bar */}
-                      {isActive && (
-                        <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-8 h-1 bg-white rounded-full shadow-lg shadow-white/80" />
-                      )}
-                    </button>
-                  );
-                })}
-              </div>
-
-              {/* Right Scroll Arrow (Desktop) */}
-              <button
-                onClick={() => handleScroll('right')}
-                aria-label="Scroll Kanan"
-                className="hidden md:flex absolute -right-3 top-1/2 -translate-y-1/2 z-20 w-8 h-8 rounded-full bg-[#181133]/90 hover:bg-[#6242fc] text-slate-300 hover:text-white border border-[#3b2d68] shadow-lg items-center justify-center transition-all opacity-0 group-hover/tabs:opacity-100 hover:scale-110 cursor-pointer backdrop-blur-sm"
-              >
-                <ChevronRight className="w-4 h-4" />
-              </button>
-            </div>
-          </div>
+              {cat.badge && (
+                <span className={`hidden md:inline-block px-1 py-0.2 rounded text-[8px] font-black uppercase tracking-wider ${
+                  isActive 
+                    ? 'bg-black/30 text-amber-200 border border-white/20' 
+                    : 'bg-red-500/20 text-[#ff4655] border border-red-500/30'
+                }`}>
+                  {cat.badge}
+                </span>
+              )}
+            </button>
+          );
+        })}
+      </div>
+    </div>
   );
 }

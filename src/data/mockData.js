@@ -45,66 +45,12 @@ export const BANNERS = [
 ];
 
 export const CATEGORIES = [
-  {
-    id: "all",
-    name: "Semua Game & Voucher",
-    icon: "Gamepad2",
-    badge: "128+ Produk",
-    gradient: "from-[#6366f1] via-[#7c3aed] to-[#9333ea]",
-    iconBg: "bg-purple-500/15 text-purple-300 border-purple-500/30",
-    glow: "shadow-purple-600/40",
-    accentBorder: "border-purple-400/50"
-  },
-  {
-    id: "popular",
-    name: "Paling Populer",
-    icon: "Flame",
-    badge: "HOT 🔥",
-    gradient: "from-[#ff5e3a] via-[#f97316] to-[#ef4444]",
-    iconBg: "bg-amber-500/15 text-amber-400 border-amber-500/30",
-    glow: "shadow-orange-600/40",
-    accentBorder: "border-orange-400/50"
-  },
-  {
-    id: "mobile",
-    name: "Mobile Games",
-    icon: "Smartphone",
-    badge: "Android & iOS",
-    gradient: "from-[#10b981] via-[#059669] to-[#047857]",
-    iconBg: "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-    glow: "shadow-emerald-600/40",
-    accentBorder: "border-emerald-400/50"
-  },
-  {
-    id: "pc",
-    name: "PC & Konsol",
-    icon: "Monitor",
-    badge: "Steam / Epic",
-    gradient: "from-[#2563eb] via-[#3b82f6] to-[#6366f1]",
-    iconBg: "bg-blue-500/15 text-blue-400 border-blue-500/30",
-    glow: "shadow-blue-600/40",
-    accentBorder: "border-blue-400/50"
-  },
-  {
-    id: "voucher",
-    name: "Voucher Digital",
-    icon: "Ticket",
-    badge: "Diskon 20%",
-    gradient: "from-[#d946ef] via-[#c026d3] to-[#9333ea]",
-    iconBg: "bg-fuchsia-500/15 text-fuchsia-400 border-fuchsia-500/30",
-    glow: "shadow-fuchsia-600/40",
-    accentBorder: "border-fuchsia-400/50"
-  },
-  {
-    id: "entertainment",
-    name: "Aplikasi & Pulsa",
-    icon: "Tv",
-    badge: "Instan 24/7",
-    gradient: "from-[#f43f5e] via-[#e11d48] to-[#be123c]",
-    iconBg: "bg-rose-500/15 text-rose-400 border-rose-500/30",
-    glow: "shadow-rose-600/40",
-    accentBorder: "border-rose-400/50"
-  }
+  { id: "all", name: "Semua Game", icon: "Gamepad2" },
+  { id: "popular", name: "Populer", icon: "Flame", badge: "HOT" },
+  { id: "mobile", name: "Mobile", icon: "Smartphone" },
+  { id: "pc", name: "PC & Konsol", icon: "Monitor" },
+  { id: "voucher", name: "Voucher", icon: "Ticket" },
+  { id: "entertainment", name: "Aplikasi", icon: "Tv" }
 ];
 
 export const GAMES = enrichedGames;

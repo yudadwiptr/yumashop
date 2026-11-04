@@ -22,13 +22,13 @@ export default function AuthModal({ isOpen, onClose, onShowSuccess }) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-      <div className="relative w-full max-w-md bg-[#1b1437] border border-[#3f326c] rounded-3xl shadow-2xl p-6 sm:p-8 text-left">
-
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-sm">
+      <div className="relative w-full max-w-md bg-[#11141d] border border-[#1e2436] rounded-3xl shadow-2xl p-6 sm:p-8 text-left">
+        
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 p-2 rounded-full bg-[#251c4a] text-slate-400 hover:text-white transition-colors"
+          className="absolute top-5 right-5 p-2 rounded-full bg-[#181d2a] text-slate-400 hover:text-white transition-colors cursor-pointer"
         >
           <X className="w-5 h-5" />
         </button>
@@ -39,33 +39,35 @@ export default function AuthModal({ isOpen, onClose, onShowSuccess }) {
         </div>
 
         {/* Tab switch */}
-        <div className="flex rounded-2xl bg-[#241a46] p-1 border border-[#392d63] mb-6">
+        <div className="flex rounded-xl bg-[#161a25] p-1 border border-[#1e2436] mb-6">
           <button
             onClick={() => setIsLogin(true)}
-            className={`flex-1 py-2 text-xs font-bold rounded-xl transition-all ${isLogin
-                ? 'bg-gradient-to-r from-[#6242fc] to-[#8c52ff] text-white shadow-md'
+            className={`flex-1 py-2 text-xs font-bold rounded-lg transition-all cursor-pointer ${
+              isLogin 
+                ? 'bg-gradient-to-r from-[#ff4655] to-[#ff6b00] text-white shadow-md' 
                 : 'text-slate-400 hover:text-white'
-              }`}
+            }`}
           >
             Masuk Akun
           </button>
           <button
             onClick={() => setIsLogin(false)}
-            className={`flex-1 py-2 text-xs font-bold rounded-xl transition-all ${!isLogin
-                ? 'bg-gradient-to-r from-[#6242fc] to-[#8c52ff] text-white shadow-md'
+            className={`flex-1 py-2 text-xs font-bold rounded-lg transition-all cursor-pointer ${
+              !isLogin 
+                ? 'bg-gradient-to-r from-[#ff4655] to-[#ff6b00] text-white shadow-md' 
                 : 'text-slate-400 hover:text-white'
-              }`}
+            }`}
           >
             Daftar Baru
           </button>
         </div>
 
-        <h3 className="text-xl font-black text-white mb-1">
+        <h3 className="text-xl font-black text-white mb-1 tracking-tight">
           {isLogin ? 'Masuk ke YUMATOPUP' : 'Daftar Akun YUMATOPUP'}
         </h3>
         <p className="text-xs text-slate-400 mb-5">
-          {isLogin
-            ? 'Nikmati kemudahan riwayat transaksi dan poin cashback YumaRewards.'
+          {isLogin 
+            ? 'Nikmati kemudahan riwayat transaksi dan poin cashback YumaRewards.' 
             : 'Daftar sekarang dan dapatkan voucher diskon 10% untuk transaksi pertama.'}
         </p>
 
@@ -89,7 +91,7 @@ export default function AuthModal({ isOpen, onClose, onShowSuccess }) {
                   placeholder="08123456789 atau user@email.com"
                   value={identifier}
                   onChange={(e) => setIdentifier(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 rounded-xl bg-[#241b46] text-white border border-[#3c2f68] focus:outline-none focus:border-[#7c4df7] text-sm font-medium"
+                  className="w-full pl-10 pr-4 py-3 rounded-xl bg-[#141824] text-white border border-[#1e2638] focus:outline-none focus:border-[#ff4655] text-sm font-medium"
                 />
                 <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
               </div>
@@ -104,7 +106,7 @@ export default function AuthModal({ isOpen, onClose, onShowSuccess }) {
                   type="password"
                   required
                   placeholder="Minimal 6 karakter"
-                  className="w-full pl-10 pr-4 py-3 rounded-xl bg-[#241b46] text-white border border-[#3c2f68] focus:outline-none focus:border-[#7c4df7] text-sm font-medium"
+                  className="w-full pl-10 pr-4 py-3 rounded-xl bg-[#141824] text-white border border-[#1e2638] focus:outline-none focus:border-[#ff4655] text-sm font-medium"
                 />
                 <Lock className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
               </div>
@@ -112,13 +114,13 @@ export default function AuthModal({ isOpen, onClose, onShowSuccess }) {
 
             <button
               type="submit"
-              className="w-full py-3.5 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-[#6242fc] via-[#7d3ff5] to-[#f54291] hover:brightness-110 shadow-lg shadow-purple-600/30 transition-all mt-2"
+              className="w-full py-3.5 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-[#ff4655] via-[#ff5400] to-[#ff7a00] hover:brightness-110 shadow-lg shadow-red-500/25 transition-all mt-2 cursor-pointer"
             >
               {isLogin ? 'Masuk Sekarang' : 'Daftar Sekarang'}
             </button>
 
             <div className="pt-2 text-center text-[11px] text-slate-400">
-              Dengan melanjutkan, Anda menyetujui <a href="#" className="text-purple-300 underline">Syarat & Ketentuan</a> dan <a href="#" className="text-purple-300 underline">Kebijakan Privasi</a> YUMATOPUP.
+              Dengan melanjutkan, Anda menyetujui <a href="#" className="text-[#ff4655] underline">Syarat & Ketentuan</a> dan <a href="#" className="text-[#ff4655] underline">Kebijakan Privasi</a> YUMATOPUP.
             </div>
           </form>
         )}
@@ -127,4 +129,3 @@ export default function AuthModal({ isOpen, onClose, onShowSuccess }) {
     </div>
   );
 }
-

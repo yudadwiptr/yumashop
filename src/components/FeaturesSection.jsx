@@ -64,7 +64,7 @@ export default function FeaturesSection() {
           return (
             <div
               key={idx}
-              className="p-6 rounded-3xl bg-[#1b1437] border border-[#362b5d] hover:border-[#6242fc]/60 transition-all duration-300 text-left hover:-translate-y-1 shadow-lg group"
+              className="p-6 rounded-3xl bg-[#11141d] border border-[#1e2436] hover:border-[#ff4655]/60 transition-all duration-300 text-left hover:-translate-y-1 shadow-lg hover:shadow-red-950/20 group"
             >
               <div className={`w-12 h-12 rounded-2xl border flex items-center justify-center mb-4 ${item.bgIcon} group-hover:scale-110 transition-transform`}>
                 <Icon className="w-6 h-6 stroke-[2.2]" />

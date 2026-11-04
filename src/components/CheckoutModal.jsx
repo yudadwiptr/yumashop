@@ -4,15 +4,11 @@ import {
   Copy, 
   Check, 
   Clock, 
-  QrCode, 
   ShieldCheck, 
   CheckCircle2, 
-  AlertCircle, 
-  Download,
-  Share2
+  Download
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
-import YumaShopLogo from './YumaShopLogo';
 
 export default function CheckoutModal({ order, onClose }) {
   const [copied, setCopied] = useState(false);
@@ -72,12 +68,12 @@ export default function CheckoutModal({ order, onClose }) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md overflow-y-auto">
-      <div className="relative w-full max-w-lg bg-[#1a1337] border border-[#3f326c] rounded-3xl shadow-2xl p-6 sm:p-7 text-left my-8">
+      <div className="relative w-full max-w-lg bg-[#1a1337] border border-[#1e2436] rounded-3xl shadow-2xl p-6 sm:p-7 text-left my-8">
         
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 p-2 rounded-full bg-[#251c4a] text-slate-400 hover:text-white transition-colors cursor-pointer"
+          className="absolute top-5 right-5 p-2 rounded-full bg-[#161a25] text-slate-400 hover:text-white transition-colors cursor-pointer"
         >
           <X className="w-5 h-5" />
         </button>
@@ -100,7 +96,7 @@ export default function CheckoutModal({ order, onClose }) {
             </p>
 
             {/* Countdown Banner */}
-            <div className="my-4 p-3 rounded-2xl bg-[#241b49] border border-[#3c2f6d] flex items-center justify-between">
+            <div className="my-4 p-3 rounded-2xl bg-[#161a25] border border-[#1e2436] flex items-center justify-between">
               <div className="flex items-center gap-2 text-xs text-slate-300">
                 <Clock className="w-4 h-4 text-rose-400" />
                 <span>Batas Waktu Pembayaran:</span>
@@ -111,10 +107,10 @@ export default function CheckoutModal({ order, onClose }) {
             </div>
 
             {/* Order Details Preview */}
-            <div className="p-4 rounded-2xl bg-[#211842] border border-[#35285e] space-y-2 text-xs mb-5">
+            <div className="p-4 rounded-2xl bg-[#141824] border border-[#1e2436] space-y-2 text-xs mb-5">
               <div className="flex justify-between text-slate-400">
                 <span>No. Transaksi</span>
-                <span className="font-mono text-purple-300 font-bold">{orderId}</span>
+                <span className="font-mono text-[#ff4655] font-bold">{orderId}</span>
               </div>
               <div className="flex justify-between text-slate-300">
                 <span>Item</span>
@@ -137,7 +133,7 @@ export default function CheckoutModal({ order, onClose }) {
                   <span className="font-bold text-white">{order.paymentMethod.name}</span>
                 </div>
               </div>
-              <div className="pt-2 border-t border-[#2e2353] flex justify-between items-center text-sm font-bold text-white">
+              <div className="pt-2 border-t border-[#1c2232] flex justify-between items-center text-sm font-bold text-white">
                 <span>Total Tagihan</span>
                 <span className="text-base font-black text-amber-400">
                   {formatIDR(order.pricing.totalPrice)}
@@ -147,7 +143,7 @@ export default function CheckoutModal({ order, onClose }) {
 
             {/* Payment Instructions Based on Channel */}
             {order.paymentMethod.id === 'qris' ? (
-              <div className="text-center p-5 rounded-2xl bg-[#241b49] border border-[#3c2f6d] mb-5">
+              <div className="text-center p-5 rounded-2xl bg-[#161a25] border border-[#1e2436] mb-5">
                 <div className="text-xs font-bold text-slate-200 mb-3">
                   Scan QRIS Menggunakan Aplikasi E-Wallet atau M-Banking:
                 </div>
@@ -201,7 +197,7 @@ export default function CheckoutModal({ order, onClose }) {
               </div>
             ) : (
               /* Virtual Account / Payment Code */
-              <div className="p-4 rounded-2xl bg-[#241b49] border border-[#3c2f6d] mb-5">
+              <div className="p-4 rounded-2xl bg-[#161a25] border border-[#1e2436] mb-5">
                 <div className="flex items-center justify-between mb-2">
                   <div className="text-xs text-slate-400">
                     Nomor {order.paymentMethod.name}:
@@ -262,14 +258,14 @@ export default function CheckoutModal({ order, onClose }) {
             </p>
 
             {/* Receipt Summary Card */}
-            <div className="my-5 p-4 rounded-2xl bg-[#231a44] border border-[#3d2f6d] text-left text-xs space-y-2">
+            <div className="my-5 p-4 rounded-2xl bg-[#231a44] border border-[#1e2436] text-left text-xs space-y-2">
               <div className="flex justify-between text-slate-400">
                 <span>Status Transaksi</span>
                 <span className="font-bold text-emerald-400 uppercase">LUNAS / BERHASIL</span>
               </div>
               <div className="flex justify-between text-slate-400">
                 <span>Nomor Referensi</span>
-                <span className="font-mono text-purple-300 font-bold">{orderId}</span>
+                <span className="font-mono text-[#ff4655] font-bold">{orderId}</span>
               </div>
               <div className="flex justify-between text-slate-300">
                 <span>Tanggal & Waktu</span>
@@ -288,7 +284,7 @@ export default function CheckoutModal({ order, onClose }) {
                   <span className="font-bold text-white">{order.paymentMethod.name}</span>
                 </div>
               </div>
-              <div className="pt-2 border-t border-[#312556] flex justify-between items-center text-sm font-bold text-white">
+              <div className="pt-2 border-t border-[#1c2232] flex justify-between items-center text-sm font-bold text-white">
                 <span>Total Dibayar</span>
                 <span className="text-amber-400 font-black">{formatIDR(order.pricing.totalPrice)}</span>
               </div>
@@ -305,15 +301,15 @@ export default function CheckoutModal({ order, onClose }) {
             <div className="grid grid-cols-2 gap-3">
               <button
                 onClick={handleDownloadReceipt}
-                className="py-3 rounded-xl bg-[#241b46] hover:bg-[#302359] text-white text-xs font-bold border border-[#3d2f6d] flex items-center justify-center gap-2 transition-colors cursor-pointer"
+                className="py-3 rounded-xl bg-[#161a25] hover:bg-[#1c2233] text-white text-xs font-bold border border-[#1e2436] flex items-center justify-center gap-2 transition-colors cursor-pointer"
               >
-                <Download className="w-4 h-4 text-purple-400" />
+                <Download className="w-4 h-4 text-[#ff4655]" />
                 <span>{receiptDownloaded ? 'Tersimpan' : 'Unduh Struk'}</span>
               </button>
 
               <button
                 onClick={onClose}
-                className="py-3 rounded-xl bg-gradient-to-r from-[#6242fc] to-[#f54291] text-white text-xs font-bold shadow-lg transition-transform hover:scale-102 cursor-pointer"
+                className="py-3 rounded-xl bg-gradient-to-r from-[#ff4655] to-[#ff6b00] text-white text-xs font-bold shadow-lg transition-transform hover:scale-102 cursor-pointer"
               >
                 Kembali ke Beranda
               </button>

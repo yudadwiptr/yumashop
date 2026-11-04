@@ -23,12 +23,12 @@ const DAYJHO_PAYMENT_LOGOS = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0f0a20] border-t border-[#29204a] text-left pt-12 pb-16">
+    <footer className="bg-[#07080c] border-t border-[#181d2a] text-left pt-12 pb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
+        
         {/* Main Footer Links & Info */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-10 border-b border-[#241a42]">
-
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-10 border-b border-[#181d2a]">
+          
           {/* Brand Column */}
           <div className="lg:col-span-2 space-y-4">
             <YumaShopLogo />
@@ -47,11 +47,11 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-bold text-white mb-3">Tentang YUMATOPUP</h4>
             <ul className="space-y-2 text-xs text-slate-400">
-              <li><a href="#" className="hover:text-purple-300 transition-colors">Tentang Kami</a></li>
-              <li><a href="#" className="hover:text-purple-300 transition-colors">Karir & Peluang</a></li>
-              <li><a href="#" className="hover:text-purple-300 transition-colors">Program Kemitraan (Affiliate)</a></li>
-              <li><a href="#" className="hover:text-purple-300 transition-colors">Berita & Pengumuman</a></li>
-              <li><a href="#" className="hover:text-purple-300 transition-colors">YumaRewards Poin</a></li>
+              <li><a href="#" className="hover:text-[#ff4655] transition-colors">Tentang Kami</a></li>
+              <li><a href="#" className="hover:text-[#ff4655] transition-colors">Karir & Peluang</a></li>
+              <li><a href="#" className="hover:text-[#ff4655] transition-colors">Program Kemitraan (Affiliate)</a></li>
+              <li><a href="#" className="hover:text-[#ff4655] transition-colors">Berita & Pengumuman</a></li>
+              <li><a href="#" className="hover:text-[#ff4655] transition-colors">YumaRewards Poin</a></li>
             </ul>
           </div>
 
@@ -59,11 +59,11 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-bold text-white mb-3">Bantuan & Dukungan</h4>
             <ul className="space-y-2 text-xs text-slate-400">
-              <li><a href="#" className="hover:text-purple-300 transition-colors">Pusat Bantuan</a></li>
-              <li><a href="#" className="hover:text-purple-300 transition-colors">Hubungi Customer Service</a></li>
-              <li><a href="#" className="hover:text-purple-300 transition-colors">Panduan Pembayaran</a></li>
-              <li><a href="#" className="hover:text-purple-300 transition-colors">Cek Status Pesanan</a></li>
-              <li><a href="#" className="hover:text-purple-300 transition-colors">Laporkan Kendala</a></li>
+              <li><a href="#" className="hover:text-[#ff4655] transition-colors">Pusat Bantuan</a></li>
+              <li><a href="#" className="hover:text-[#ff4655] transition-colors">Hubungi Customer Service</a></li>
+              <li><a href="#" className="hover:text-[#ff4655] transition-colors">Panduan Pembayaran</a></li>
+              <li><a href="#" className="hover:text-[#ff4655] transition-colors">Cek Status Pesanan</a></li>
+              <li><a href="#" className="hover:text-[#ff4655] transition-colors">Laporkan Kendala</a></li>
             </ul>
           </div>
 
@@ -71,31 +71,31 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-bold text-white mb-3">Legal & Keamanan</h4>
             <ul className="space-y-2 text-xs text-slate-400">
-              <li><a href="#" className="hover:text-purple-300 transition-colors">Syarat & Ketentuan</a></li>
-              <li><a href="#" className="hover:text-purple-300 transition-colors">Kebijakan Privasi</a></li>
-              <li><a href="#" className="hover:text-purple-300 transition-colors">Pemberitahuan Hak Cipta</a></li>
-              <li><a href="#" className="hover:text-purple-300 transition-colors">Waspada Penipuan</a></li>
-              <li><a href="#" className="hover:text-purple-300 transition-colors">Kepatuhan Hukum (PSE)</a></li>
+              <li><a href="#" className="hover:text-[#ff4655] transition-colors">Syarat & Ketentuan</a></li>
+              <li><a href="#" className="hover:text-[#ff4655] transition-colors">Kebijakan Privasi</a></li>
+              <li><a href="#" className="hover:text-[#ff4655] transition-colors">Pemberitahuan Hak Cipta</a></li>
+              <li><a href="#" className="hover:text-[#ff4655] transition-colors">Waspada Penipuan</a></li>
+              <li><a href="#" className="hover:text-[#ff4655] transition-colors">Kepatuhan Hukum (PSE)</a></li>
             </ul>
           </div>
 
         </div>
 
         {/* Supported Payment Logos using Dayjhostore assets */}
-        <div className="py-8 border-b border-[#241a42]">
+        <div className="py-8 border-b border-[#181d2a]">
           <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">
             Metode Pembayaran Resmi yang Didukung di Indonesia
           </div>
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3">
             {DAYJHO_PAYMENT_LOGOS.map((pay) => (
-              <div
-                key={pay.name}
+              <div 
+                key={pay.name} 
                 className="h-12 bg-white rounded-xl p-2 flex items-center justify-center shadow-md hover:scale-105 transition-transform"
                 title={pay.name}
               >
-                <img
-                  src={pay.image}
-                  alt={pay.name}
+                <img 
+                  src={pay.image} 
+                  alt={pay.name} 
                   className="max-h-7 max-w-[85px] object-contain"
                 />
               </div>

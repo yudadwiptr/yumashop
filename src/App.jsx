@@ -102,7 +102,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-[#0e0a1c] text-slate-100 flex flex-col font-sans selection:bg-[#ff5e3a] selection:text-white">
+    <div className="min-h-screen bg-[#08090d] text-slate-100 flex flex-col font-sans selection:bg-[#ff4655] selection:text-white">
 
       {/* Announcement Warning Bar */}
       <AnnoucementBar onOpenSecurityTips={handleOpenSecurityTips} />
@@ -141,12 +141,12 @@ export default function App() {
             <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
 
               <div className="flex items-center justify-between mb-5">
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center">
-                    <Flame className="w-4 h-4 fill-amber-400" />
+                <div className="flex items-center gap-2.5">
+                  <div className="w-8 h-8 rounded-xl bg-red-500/15 text-[#ff4655] border border-red-500/25 flex items-center justify-center">
+                    <Flame className="w-4 h-4 fill-[#ff4655]" />
                   </div>
                   <div>
-                    <h2 className="text-lg sm:text-xl font-black text-white text-left">
+                    <h2 className="text-lg sm:text-xl font-black text-white text-left tracking-tight">
                       Pilihan Game & Voucher Terpopuler
                     </h2>
                     <p className="text-xs text-slate-400 text-left">
@@ -155,7 +155,7 @@ export default function App() {
                   </div>
                 </div>
 
-                <div className="text-xs text-purple-300 font-semibold bg-[#1e1738] px-3 py-1.5 rounded-full border border-[#352a5c]">
+                <div className="text-xs text-slate-300 font-bold bg-[#11141d] px-3.5 py-1.5 rounded-full border border-[#1e2436]">
                   {filteredGames.length} Game Tersedia
                 </div>
               </div>
@@ -184,17 +184,17 @@ export default function App() {
                       <button
                         onClick={handleLoadMore}
                         disabled={isLoadingMore}
-                        className="inline-flex items-center gap-2 px-8 py-3 rounded-2xl bg-[#1e1738] hover:bg-[#281f4a] text-slate-200 hover:text-white border border-[#3d3164] text-xs sm:text-sm font-bold shadow-lg transition-all transform hover:-translate-y-0.5 cursor-pointer"
+                        className="inline-flex items-center gap-2 px-8 py-3 rounded-xl bg-[#11141d] hover:bg-[#181d2a] text-slate-200 hover:text-white border border-[#1e2436] hover:border-[#ff4655]/60 text-xs sm:text-sm font-bold shadow-lg transition-all transform hover:-translate-y-0.5 cursor-pointer"
                       >
                         {isLoadingMore ? (
                           <>
-                            <RotateCw className="w-4 h-4 animate-spin text-purple-400" />
+                            <RotateCw className="w-4 h-4 animate-spin text-[#ff4655]" />
                             <span>Memuat Produk...</span>
                           </>
                         ) : (
                           <>
                             <span>Tampilkan Lebih Banyak Game ({filteredGames.length - visibleCount} tersisa)</span>
-                            <ChevronDown className="w-4 h-4 text-purple-400" />
+                            <ChevronDown className="w-4 h-4 text-[#ff4655]" />
                           </>
                         )}
                       </button>
@@ -202,11 +202,11 @@ export default function App() {
                   )}
                 </div>
               ) : (
-                <div className="py-16 text-center bg-[#1b1437] rounded-3xl border border-[#362b5d] my-6">
+                <div className="py-16 text-center bg-[#11141d] rounded-2xl border border-[#1e2436] my-6">
                   <p className="text-slate-400 text-sm">Tidak ada game yang cocok dengan pencarian "{searchQuery}".</p>
                   <button
                     onClick={() => { setSearchQuery(''); setActiveCategory('all'); }}
-                    className="mt-3 px-4 py-2 rounded-xl bg-[#6242fc] text-white text-xs font-bold cursor-pointer"
+                    className="mt-3 px-5 py-2 rounded-xl bg-gradient-to-r from-[#ff4655] to-[#ff6b00] text-white text-xs font-bold cursor-pointer hover:brightness-110 transition-all"
                   >
                     Reset Filter
                   </button>
