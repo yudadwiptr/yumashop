@@ -540,18 +540,26 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
                       </div>
                     )}
 
-                    {/* Bottom Logo Strip */}
-                    <div className="bg-[#10131d] px-3 sm:px-4 py-2 sm:py-2.5 border-t border-[#1a2030] flex items-center justify-end gap-2 overflow-x-auto">
-                      <span className="text-[9px] sm:text-[10px] text-slate-400 font-medium mr-1 hidden sm:inline">Dukungan:</span>
-                      {group.items.map((item) => (
-                        <div key={item.id} className="h-4.5 sm:h-5 px-1.5 py-0.5 bg-white/90 hover:bg-white rounded flex items-center justify-center transition-colors flex-shrink-0">
-                          <img
-                            src={item.image}
-                            alt={item.name}
-                            className="h-2.5 sm:h-3 w-auto object-contain"
-                          />
-                        </div>
-                      ))}
+                    {/* Bottom Logo Strip - Fully Responsive Wrapping (No Cut-off on Mobile) */}
+                    <div className="bg-[#10131d] px-3 sm:px-4 py-2 sm:py-2.5 border-t border-[#1a2030] flex flex-wrap items-center gap-1.5 sm:gap-2">
+                      <span className="text-[10px] text-slate-400 font-bold flex-shrink-0 mr-0.5">
+                        Dukungan:
+                      </span>
+                      <div className="flex flex-wrap items-center gap-1.5">
+                        {group.items.map((item) => (
+                          <div 
+                            key={item.id} 
+                            className="h-5 px-1.5 py-0.5 bg-white rounded flex items-center justify-center transition-transform hover:scale-105 shadow-xs"
+                            title={item.name}
+                          >
+                            <img
+                              src={item.image}
+                              alt={item.name}
+                              className="h-2.5 sm:h-3 max-w-[60px] w-auto object-contain"
+                            />
+                          </div>
+                        ))}
+                      </div>
                     </div>
 
                   </div>

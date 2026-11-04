@@ -34,8 +34,8 @@ export default function AuthModal({ isOpen, onClose, onShowSuccess }) {
         </button>
 
         {/* Brand */}
-        <div className="mb-6">
-          <YumaShopLogo />
+        <div className="mb-5 flex justify-center">
+          <YumaShopLogo className="h-14 w-auto" />
         </div>
 
         {/* Tab switch */}

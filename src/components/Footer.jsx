@@ -31,7 +31,7 @@ export default function Footer() {
           
           {/* Brand Column */}
           <div className="lg:col-span-2 space-y-3 sm:space-y-4">
-            <YumaShopLogo />
+            <YumaShopLogo className="h-11 sm:h-12 w-auto" />
 
             <p className="text-xs text-slate-400 leading-relaxed max-w-sm">
               YUMATOPUP adalah platform top up game dan voucher digital termurah, tercepat, dan terpercaya di Indonesia. Dapatkan pengiriman item otomatis dalam hitungan detik dengan dukungan metode pembayaran terlengkap.

@@ -43,7 +43,7 @@ export default function Navbar({ onSearch, onSelectGame, games = [], onOpenAuth 
           
           {/* Brand Logo */}
           <div className="cursor-pointer flex-shrink-0" onClick={() => onSelectGame(null)}>
-            <YumaShopLogo className="h-8 sm:h-9 w-auto" />
+            <YumaShopLogo className="h-9 sm:h-12 w-auto" />
           </div>
 
           {/* Search Bar - Desktop & Tablet */}
