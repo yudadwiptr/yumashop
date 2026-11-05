@@ -1,6 +1,7 @@
 /**
  * Service to check and verify game player nicknames in real-time
- * Uses direct validation endpoints with graceful error handling and timeout protection.
+ * Uses direct GET validation endpoints (Simple Request to avoid browser CORS preflight issues)
+ * with graceful error handling and timeout protection.
  */
 
 export async function checkGameAccount({ gameId = '', userId = '', zoneId = '' }) {
@@ -21,11 +22,11 @@ export async function checkGameAccount({ gameId = '', userId = '', zoneId = '' }
     }
 
     try {
-      const res = await fetch('https://api.isan.eu.org/nickname/ml', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ id: cleanUser, server: cleanZone }),
-        signal: AbortSignal.timeout(7000)
+      // Use GET with query params to avoid browser OPTIONS preflight (which returns 405 on some Cloudflare workers)
+      const url = `https://api.isan.eu.org/nickname/ml?id=${encodeURIComponent(cleanUser)}&server=${encodeURIComponent(cleanZone)}`;
+      const res = await fetch(url, {
+        method: 'GET',
+        signal: AbortSignal.timeout(8000)
       });
 
       if (!res.ok) {
@@ -51,8 +52,10 @@ export async function checkGameAccount({ gameId = '', userId = '', zoneId = '' }
   // Garena Free Fire
   if (isFF) {
     try {
-      const res = await fetch(`https://api.isan.eu.org/nickname/ff?id=${encodeURIComponent(cleanUser)}`, {
-        signal: AbortSignal.timeout(7000)
+      const url = `https://api.isan.eu.org/nickname/ff?id=${encodeURIComponent(cleanUser)}`;
+      const res = await fetch(url, {
+        method: 'GET',
+        signal: AbortSignal.timeout(8000)
       });
 
       if (!res.ok) {
