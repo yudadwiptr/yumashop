@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import {
   ArrowLeft,
   HelpCircle,
@@ -10,15 +10,24 @@ import {
   ChevronDown,
   ChevronUp,
   Info,
-  CreditCard
+  CreditCard,
+  UserCheck,
+  RotateCw
 } from 'lucide-react';
 import { PAYMENT_METHODS } from '../data/mockData';
+import { checkGameAccount } from '../services/accountVerification';
 
 export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
   // Step 1: User ID & Zone ID
   const [userId, setUserId] = useState('');
   const [zoneId, setZoneId] = useState(game.serverOptions ? game.serverOptions[0] : '');
   const [showIdHelp, setShowIdHelp] = useState(false);
+
+  // Realtime Account Verification States
+  const [accountName, setAccountName] = useState('');
+  const [isVerifying, setIsVerifying] = useState(false);
+  const [verifyError, setVerifyError] = useState('');
+  const [accountCountry, setAccountCountry] = useState('');
 
   // Step 2: Denomination selection
   const [selectedDenomCategory, setSelectedDenomCategory] = useState('Semua');
@@ -52,6 +61,72 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
   const [appliedPromo, setAppliedPromo] = useState(null);
   const [promoError, setPromoError] = useState('');
   const [rememberMe, setRememberMe] = useState(true);
+
+  // Realtime Account Detection Hook
+  useEffect(() => {
+    const isMLBB = game.id?.toLowerCase().includes('mobile-legends') || game.id?.toLowerCase().includes('mlbb');
+    const isFF = game.id?.toLowerCase().includes('free-fire') || game.id?.toLowerCase().includes('ff');
+
+    const cleanUser = userId.trim();
+    const cleanZone = zoneId.trim();
+
+    const isValidLength = (isMLBB && cleanUser.length >= 5 && cleanZone.length >= 3) ||
+                          (isFF && cleanUser.length >= 5);
+
+    if (!isValidLength) {
+      return;
+    }
+
+    let isMounted = true;
+    const timer = setTimeout(async () => {
+      setIsVerifying(true);
+      setVerifyError('');
+
+      const result = await checkGameAccount({
+        gameId: game.id,
+        userId: cleanUser,
+        zoneId: cleanZone
+      });
+
+      if (!isMounted) return;
+
+      if (result.success) {
+        setAccountName(result.username);
+        setAccountCountry(result.country || '');
+        setVerifyError('');
+      } else if (result.supported !== false) {
+        setAccountName('');
+        setVerifyError(result.message || 'Akun tidak ditemukan');
+      }
+
+      setIsVerifying(false);
+    }, 700);
+
+    return () => {
+      isMounted = false;
+      clearTimeout(timer);
+    };
+  }, [userId, zoneId, game.id]);
+
+  const handleManualVerify = async () => {
+    if (!userId.trim()) return;
+    setIsVerifying(true);
+    setVerifyError('');
+    const result = await checkGameAccount({
+      gameId: game.id,
+      userId: userId.trim(),
+      zoneId: zoneId.trim()
+    });
+    if (result.success) {
+      setAccountName(result.username);
+      setAccountCountry(result.country || '');
+      setVerifyError('');
+    } else {
+      setAccountName('');
+      setVerifyError(result.message || 'Akun tidak ditemukan. Periksa kembali ID & Server.');
+    }
+    setIsVerifying(false);
+  };
 
   // Filter denominations by category
   const denomCategories = ['Semua', ...new Set(game.denominations.map(d => d.category))];
@@ -150,6 +225,7 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
       game,
       userId,
       zoneId,
+      accountName,
       denomination: selectedDenom,
       paymentMethod: selectedPayment,
       contactInfo,
@@ -288,7 +364,11 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
                   required
                   placeholder={game.inputPlaceholder || "Masukkan ID"}
                   value={userId}
-                  onChange={(e) => setUserId(e.target.value)}
+                  onChange={(e) => {
+                    setUserId(e.target.value);
+                    setAccountName('');
+                    setVerifyError('');
+                  }}
                   className="w-full px-3.5 sm:px-4 py-2.5 sm:py-3 rounded-xl bg-[#141824] text-white border border-[#1e2638] focus:outline-none focus:border-[#ff4655] focus:ring-2 focus:ring-[#ff4655]/20 text-xs sm:text-sm font-medium transition-all"
                 />
               </div>
@@ -301,7 +381,11 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
                   {game.isServerSelect ? (
                     <select
                       value={zoneId}
-                      onChange={(e) => setZoneId(e.target.value)}
+                      onChange={(e) => {
+                        setZoneId(e.target.value);
+                        setAccountName('');
+                        setVerifyError('');
+                      }}
                       className="w-full px-3.5 sm:px-4 py-2.5 sm:py-3 rounded-xl bg-[#141824] text-white border border-[#1e2638] focus:outline-none focus:border-[#ff4655] text-xs sm:text-sm font-medium transition-all"
                     >
                       {game.serverOptions.map(srv => (
@@ -313,13 +397,74 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
                       type="text"
                       placeholder={game.zonePlaceholder || "Zone ID"}
                       value={zoneId}
-                      onChange={(e) => setZoneId(e.target.value)}
+                      onChange={(e) => {
+                        setZoneId(e.target.value);
+                        setAccountName('');
+                        setVerifyError('');
+                      }}
                       className="w-full px-3.5 sm:px-4 py-2.5 sm:py-3 rounded-xl bg-[#141824] text-white border border-[#1e2638] focus:outline-none focus:border-[#ff4655] text-xs sm:text-sm font-medium transition-all"
                     />
                   )}
                 </div>
               )}
             </div>
+
+            {/* Realtime Account Verification Status Box */}
+            {isVerifying && (
+              <div className="mt-3 p-3 rounded-xl bg-[#141824] border border-amber-500/30 flex items-center gap-2.5 text-xs text-amber-300">
+                <RotateCw className="w-4 h-4 animate-spin text-amber-400 flex-shrink-0" />
+                <span>Memverifikasi akun {game.name} ke server resmi...</span>
+              </div>
+            )}
+
+            {!isVerifying && accountName && (
+              <div className="mt-3 p-3 rounded-xl bg-emerald-500/15 border border-emerald-500/35 flex items-center justify-between text-xs text-emerald-300 shadow-sm animate-[fadeIn_0.2s_ease-out]">
+                <div className="flex items-center gap-2.5 min-w-0">
+                  <div className="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center flex-shrink-0">
+                    <UserCheck className="w-4 h-4" />
+                  </div>
+                  <div className="truncate">
+                    <span className="text-[10px] uppercase font-bold text-emerald-400 block leading-tight">Nama Akun Terdeteksi:</span>
+                    <span className="text-sm font-black text-white truncate block">{accountName}</span>
+                  </div>
+                </div>
+                {accountCountry && (
+                  <span className="text-[10px] font-bold bg-emerald-500/20 border border-emerald-500/30 px-2 py-0.5 rounded-md text-emerald-300 flex-shrink-0 ml-2">
+                    Region {accountCountry}
+                  </span>
+                )}
+              </div>
+            )}
+
+            {!isVerifying && verifyError && (
+              <div className="mt-3 p-3 rounded-xl bg-rose-500/10 border border-rose-500/30 text-rose-300 text-xs flex items-center justify-between">
+                <span>⚠️ {verifyError}</span>
+                <button
+                  type="button"
+                  onClick={handleManualVerify}
+                  className="text-[11px] underline font-bold text-[#ff4655] hover:text-white cursor-pointer ml-2 flex-shrink-0"
+                >
+                  Coba Lagi
+                </button>
+              </div>
+            )}
+
+            {/* Quick Test Demo Hint for MLBB */}
+            {game.id?.toLowerCase().includes('mobile-legends') && !userId && (
+              <div className="mt-2.5 text-[11px] text-slate-400 flex items-center gap-1.5 flex-wrap">
+                <span>Contoh akun valid untuk uji coba:</span>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setUserId('1114917746');
+                    setZoneId('13486');
+                  }}
+                  className="text-amber-400 hover:text-amber-300 font-mono font-bold underline cursor-pointer"
+                >
+                  1114917746 (13486)
+                </button>
+              </div>
+            )}
 
             <p className="text-[10px] sm:text-[11px] text-slate-400 mt-2.5">
               Demi keamanan dan ketepatan pengiriman, pastikan ID akun yang Anda masukkan sudah sesuai.
@@ -675,9 +820,14 @@ export default function TopUpFlow({ game, onBack, onCheckout, onShowModal }) {
                 <span className="font-semibold text-white">{selectedDenom?.name}</span>
               </div>
 
-              <div className="flex justify-between text-slate-300">
+              <div className="flex justify-between items-start text-slate-300">
                 <span>User ID Target</span>
-                <span className="font-mono text-[#ff4655]">{userId || '-'} {zoneId ? `(${zoneId})` : ''}</span>
+                <div className="text-right">
+                  <span className="font-mono text-[#ff4655] font-bold block">{userId || '-'} {zoneId ? `(${zoneId})` : ''}</span>
+                  {accountName && (
+                    <span className="text-[11px] text-emerald-400 font-semibold block">Akun: {accountName}</span>
+                  )}
+                </div>
               </div>
 
               <div className="flex justify-between items-center text-slate-300">

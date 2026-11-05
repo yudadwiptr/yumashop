@@ -117,9 +117,14 @@ export default function CheckoutModal({ order, onClose }) {
                 <span>Item</span>
                 <span className="font-bold text-white">{order.game.name} - {order.denomination.name}</span>
               </div>
-              <div className="flex justify-between text-slate-300">
+              <div className="flex justify-between items-start text-slate-300">
                 <span>User ID Target</span>
-                <span className="font-mono text-amber-300">{order.userId} {order.zoneId ? `(${order.zoneId})` : ''}</span>
+                <div className="text-right">
+                  <span className="font-mono text-amber-300 font-bold block">{order.userId} {order.zoneId ? `(${order.zoneId})` : ''}</span>
+                  {order.accountName && (
+                    <span className="text-[11px] text-emerald-400 font-semibold block">Akun: {order.accountName}</span>
+                  )}
+                </div>
               </div>
               <div className="flex justify-between items-center text-slate-300">
                 <span>Metode Pembayaran</span>
@@ -271,6 +276,15 @@ export default function CheckoutModal({ order, onClose }) {
               <div className="flex justify-between text-slate-300">
                 <span>Tanggal & Waktu</span>
                 <span>{orderDate}</span>
+              </div>
+              <div className="flex justify-between items-start text-slate-300">
+                <span>Tujuan Akun</span>
+                <div className="text-right">
+                  <span className="font-mono text-white font-bold block">{order.userId} {order.zoneId ? `(${order.zoneId})` : ''}</span>
+                  {order.accountName && (
+                    <span className="text-[11px] text-emerald-400 font-semibold block">{order.accountName}</span>
+                  )}
+                </div>
               </div>
               <div className="flex justify-between items-center text-slate-300">
                 <span>Metode Pembayaran</span>
